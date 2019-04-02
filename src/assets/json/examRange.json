@@ -1,0 +1,195 @@
+{
+    "treeNodes": [
+        {
+            "id": "2d5d125b-384c-47a3-aa78-1a3386785660",
+            "open": "true",
+            "parentId": 0,
+            "name": "小学一年级"
+        },
+        {
+            "id": "B065BD5A-4CE4-4AD2-B299-8F3507AD0714",
+            "parentId": "2d5d125b-384c-47a3-aa78-1a3386785660",
+            "name": "一班"
+        },
+        {
+            "id": "4BDA5089-34F9-4815-BF21-77FCB8CF012F",
+            "parentId": "2d5d125b-384c-47a3-aa78-1a3386785660",
+            "name": "二班"
+        },
+        {
+            "id": "A53851D0-80F7-4440-9D73-8A1AA31C0AA3",
+            "parentId": "2d5d125b-384c-47a3-aa78-1a3386785660",
+            "name": "三班"
+        },
+        {
+            "id": "B6B832D4-B8FB-43F5-9614-3C21B6EE072F",
+            "parentId": "2d5d125b-384c-47a3-aa78-1a3386785660",
+            "name": "四班"
+        },
+        {
+            "id": "FF804A1F-5517-484F-859D-B8F3BAD4ED5B",
+            "parentId": "2d5d125b-384c-47a3-aa78-1a3386785660",
+            "name": "五班"
+        },
+        { "id": "grade_id1", "open": "true", "parentId": 0, "name": "小学二年级" },
+        {
+            "id": "747FBAD4-810E-4A58-AD58-140774FF4CFC",
+            "parentId": "grade_id1",
+            "name": "一班"
+        },
+        {
+            "id": "FF751190-8E0F-4282-8E6C-D094E77CDB85",
+            "parentId": "grade_id1",
+            "name": "二班"
+        },
+        {
+            "id": "795A853F-D357-4C1F-81D9-4AC4B08510DD",
+            "parentId": "grade_id1",
+            "name": "三班"
+        },
+        {
+            "id": "dea0c49f-d44e-4443-95ef-f20ec95cb8b3",
+            "open": "true",
+            "parentId": 0,
+            "name": "小学三年级"
+        },
+        {
+            "id": "f51963ea-ec63-4406-a386-ca307c18860d",
+            "parentId": "dea0c49f-d44e-4443-95ef-f20ec95cb8b3",
+            "name": "一班"
+        },
+        {
+            "id": "49cde1da-482a-4e3c-acdc-653f464a11bc",
+            "parentId": "dea0c49f-d44e-4443-95ef-f20ec95cb8b3",
+            "name": "二班"
+        },
+        {
+            "id": "f797ac76-ef46-457b-a97f-1a420c44aa89",
+            "parentId": "dea0c49f-d44e-4443-95ef-f20ec95cb8b3",
+            "name": "三班"
+        },
+        {
+            "id": "152316b0-953d-468e-aab1-cc4648b743fb",
+            "parentId": "dea0c49f-d44e-4443-95ef-f20ec95cb8b3",
+            "name": "四班"
+        },
+        {
+            "id": "45b08c07-b048-4d3c-8792-9afdd82d301f",
+            "parentId": "dea0c49f-d44e-4443-95ef-f20ec95cb8b3",
+            "name": "五班"
+        },
+        {
+            "id": "2b122f31-4be4-43a8-8959-08a3e0ccf2a1",
+            "parentId": "dea0c49f-d44e-4443-95ef-f20ec95cb8b3",
+            "name": "六班"
+        },
+        {
+            "id": "d5d554f2-7e38-4b11-87d9-460870dac7de",
+            "open": "true",
+            "parentId": 0,
+            "name": "小学四年级"
+        },
+        {
+            "id": "82d01094-6bd5-437a-ac64-3726ee509e8d",
+            "parentId": "d5d554f2-7e38-4b11-87d9-460870dac7de",
+            "name": "一班"
+        },
+        {
+            "id": "4eed3294-35db-4e5f-a0e3-f01d7a674520",
+            "parentId": "d5d554f2-7e38-4b11-87d9-460870dac7de",
+            "name": "二班"
+        },
+        {
+            "id": "15f4efdb-1817-4657-9221-d34763a0906a",
+            "parentId": "d5d554f2-7e38-4b11-87d9-460870dac7de",
+            "name": "三班"
+        },
+        {
+            "id": "559410d9-6443-438f-ac48-ea29c89bc811",
+            "parentId": "d5d554f2-7e38-4b11-87d9-460870dac7de",
+            "name": "四班"
+        },
+        {
+            "id": "6ccc0970-1ef7-4f17-8fea-a250f2d8ad9c",
+            "parentId": "d5d554f2-7e38-4b11-87d9-460870dac7de",
+            "name": "五班"
+        },
+        {
+            "id": "e26829dc-e7a7-44cd-8d94-31813a31999f",
+            "parentId": "d5d554f2-7e38-4b11-87d9-460870dac7de",
+            "name": "六班"
+        },
+        {
+            "id": "c72e6949-b9ce-4ade-a4e3-44adf4d362cf",
+            "open": "true",
+            "parentId": 0,
+            "name": "小学五年级"
+        },
+        {
+            "id": "e76e392a-9635-48a8-a1d3-01980937254a",
+            "parentId": "c72e6949-b9ce-4ade-a4e3-44adf4d362cf",
+            "name": "一班"
+        },
+        {
+            "id": "e2a676de-9e0e-4294-9dd6-0362a328c526",
+            "parentId": "c72e6949-b9ce-4ade-a4e3-44adf4d362cf",
+            "name": "二班"
+        },
+        {
+            "id": "3c027ee2-87e6-4729-86d7-305ea033e858",
+            "parentId": "c72e6949-b9ce-4ade-a4e3-44adf4d362cf",
+            "name": "三班"
+        },
+        {
+            "id": "d4274a4e-31c4-4062-a134-c2601a560e00",
+            "parentId": "c72e6949-b9ce-4ade-a4e3-44adf4d362cf",
+            "name": "四班"
+        },
+        {
+            "id": "6e480f2a-f2d6-44eb-b436-167e592e00bf",
+            "parentId": "c72e6949-b9ce-4ade-a4e3-44adf4d362cf",
+            "name": "五班"
+        },
+        {
+            "id": "60efaab0-f1b9-4f87-8da8-84974c152919",
+            "parentId": "c72e6949-b9ce-4ade-a4e3-44adf4d362cf",
+            "name": "六班"
+        },
+        {
+            "id": "3b2a4a9a-e70c-4f53-8da4-3349becf184a",
+            "open": "true",
+            "parentId": 0,
+            "name": "小学六年级"
+        },
+        {
+            "id": "ae7d5de6-3bab-4e8a-9bbb-1304e5dc3e58",
+            "parentId": "3b2a4a9a-e70c-4f53-8da4-3349becf184a",
+            "name": "一班"
+        },
+        {
+            "id": "120d3257-0709-4471-aa0c-351ffb3d3ae1",
+            "parentId": "3b2a4a9a-e70c-4f53-8da4-3349becf184a",
+            "name": "二班"
+        },
+        {
+            "id": "67620e2f-681f-4072-9da0-69a521a34d19",
+            "parentId": "3b2a4a9a-e70c-4f53-8da4-3349becf184a",
+            "name": "三班"
+        },
+        {
+            "id": "4ba7abf5-3c61-4dbe-a8e3-b81cc0da93c7",
+            "parentId": "3b2a4a9a-e70c-4f53-8da4-3349becf184a",
+            "name": "四班"
+        },
+        {
+            "id": "457e3299-7e3a-4d52-a5d7-e883ab9bf12d",
+            "parentId": "3b2a4a9a-e70c-4f53-8da4-3349becf184a",
+            "name": "五班"
+        },
+        {
+            "id": "b49c4657-0ece-4845-8df1-50b2e3001225",
+            "parentId": "3b2a4a9a-e70c-4f53-8da4-3349becf184a",
+            "name": "六班"
+        }
+    ]
+}

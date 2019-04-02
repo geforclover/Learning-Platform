@@ -1,0 +1,19 @@
+<div class="card -hasDrawer" *ngFor="let exam of examination">
+  <span class="label-drawer drawer1">{{exam.years}}</span>
+  <span class="label-drawer drawer2">{{exam.term}}</span>
+  <div class="card-header"><span>{{exam.exam_name}}</span><span>{{exam.gradename}}</span><span>{{exam.teacher_name}}</span></div>
+  <div class="card-content">
+    <div class="buttonBox">
+      <span class="button">编辑考试</span>
+      <span class="button">考试班级</span>
+      <span class="button">考试科目</span>
+      <span class="button">批改试卷</span>
+      <span class="button">查看成绩</span>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span class="button">发布考试</span>
+    <span class="button">删除考试</span>
+  </div>
+</div>
+<app-page-mark [pageMark]="pageMark"></app-page-mark>

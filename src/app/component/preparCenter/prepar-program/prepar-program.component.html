@@ -1,0 +1,22 @@
+<div class="item-column">
+	<div class="card column-4" *ngFor="let program of programs">
+		<div class="card-header">
+			<div class="card-header-image">
+				<img src="/assets/images/program.jpg" alt="">
+			</div>
+		</div>
+		<div class="card-content t-center">
+			<span class="card-content-text">{{program.versionname}}{{program.gradename}}{{program.coursename}}</span>
+		</div>
+		<div class="card-footer t-right">
+			<span>{{program.createtime}}</span>
+		</div>
+	</div>
+	<div class="card column-4">
+		<div class="card-header">
+			<div class="card-header-image" [routerLink]="'create-program'">
+				<img src="/assets/images/create.png" alt="">
+			</div>
+		</div>
+	</div>
+</div>

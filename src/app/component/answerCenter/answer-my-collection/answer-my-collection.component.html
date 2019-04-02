@@ -1,0 +1,22 @@
+<div class="list-view" appPaddingBox>
+  <div class="list-view-item list-card padding-0-4vw-0-3vw" *ngFor="let myCollection of myCollections" [attr.name]="myCollection._c_value">
+      <div class="list-card-label label label-triangleUR --upper-right"><span><svg class="icon" aria-hidden="true"><use attr.xlink:href={{subIcon[subName.indexOf(myCollection._c_value)]}}></use></svg></span></div>
+      <div class="list-card-label label label-bookmark --upper-left">
+          <span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shoucang"></use></svg></span>
+          <span>{{myCollection.shoucang}}</span>
+      </div>
+      <div class="list-card-label label label-steeple --lower-left">
+          <span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-huida1"></use></svg></span>
+          <span>{{myCollection.huida}}</span>
+      </div>
+      <div class="list-card-header">
+          <span>{{myCollection.name}}</span><span>{{myCollection.gradename}}</span>
+      </div>
+      <div class="list-card-inner">
+          <a href="" [routerLink]="['../answer-reply']" (click)="setCurrentAnswerReply(myCollection)">{{myCollection.problemname}}</a>
+      </div>
+      <div class="list-card-footer">
+          <span>{{myCollection.collecttime}}</span>
+      </div>
+  </div>
+</div>

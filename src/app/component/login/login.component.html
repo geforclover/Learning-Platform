@@ -1,0 +1,35 @@
+<form #f="ngForm" #form method="post" (ngSubmit)="onSubmit(f)" action="http://demo-cas.tjaide.com/cas/login">
+  <table>
+    <tr>
+      <th height="44" width="180" align="right">隐藏信息：</th>
+      <td width="700" align="left">
+        <input type="hidden" id="auto" name="auto" value="true" />
+        <input type="hidden" id="errorPage" name="errorPage" value="http://localhost" />
+        <input type="hidden" id="service" name="service" value="http://192.168.254.120:4200/login-success?{{username}}" />
+      </td>
+    </tr>
+    <tr>
+      <th height="44" width="180" align="right">用户名：</th>
+      <td width="700" align="left">
+        <input type="text" id="username" name="username" value="teacher002" [(ngModel)]="username" />
+      </td>
+    </tr>
+    <tr>
+      <th height="44" width="180" align="right">密码：</th>
+      <td width="700" align="left">
+        <input type="password" id="password" name="password" value="123456" />
+      </td>
+    </tr>
+    <tr>
+      <th height="44" align="right">验证码：</th>
+      <td align="left" valign="middle">
+        <input type="text" class="code" maxlength="4" id="yzm" name="yzm" style="color:black; font-size:20px;" /> <span class="code2"> &nbsp;&nbsp; <img src="http://demo-cas.tjaide.com/cas/captcha.jpg" style="cursor:pointer;" onclick="javascript:this.src='http://demo-cas.tjaide.com/cas/captcha.jpg?time='+new Date().getTime()" /></span>
+      </td>
+    </tr>
+    <tr>
+      <td height="60" colspan="4" align="center" valign="middle">
+        <button type="submit" id="button" name="button">提交</button>
+      </td>
+    </tr>
+  </table>
+</form>

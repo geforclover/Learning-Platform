@@ -1,0 +1,46 @@
+<div class="tableView --zoomIn">
+	<div class="tableView-title">
+		<span class="tableView-title__name">{{tableViewService.modelTitle.name}}</span>
+		<span class="tableView-title__icon">
+			<img src="/assets/images/icons/icon-zoomIn.png" alt="" (click)="setZoomClass(false)">
+			<img src="/assets/images/icons/icon-zoomOut.png" alt="" (click)="setZoomClass(true)">
+			<img src="/assets/images/icons/icon-close.png" alt="" tableViewClose>
+		</span>
+	</div>
+	<div class="tableView-content">
+		<div class="tableView-content-heading" #tableHeading>
+			<span>请您选择班级：</span>
+			<div class="--filters" id="--classes" (click)="popLeftPanel()">
+				<span class="--filters__icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bianji1"></use></svg></span>
+				<span class="--filters__name"></span>
+			</div>
+		</div>
+		<div class="tableView-content-main" #tableViewMain>
+			<div class="mainView-left">
+				<ul class="user-list">
+					<li *ngFor="let item of classHomeworkInfos" (click)="getCurrentWorkName(item.homeworkid, item.names)" [ngClass]="{'--active': currentHomeworks === item.homeworkid}">
+						<span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bianji1"></use></svg></span>
+						<span>{{item.names || '暂无作业'}}</span>
+					</li>
+				</ul>
+			</div>
+			<div class="mainView-right" [ngSwitch]="tableViewService.modelTitle.url">
+				<app-work-expectation *ngSwitchCase="'work-expectation'"></app-work-expectation>
+				<app-work-corrected *ngSwitchCase="'work-corrected'"></app-work-corrected>
+				<app-work-unpublish *ngSwitchCase="'work-unPublish'"></app-work-unpublish>
+			</div>
+		</div>
+		<div class="tableView-content-leftPanel" #leftPanel>
+			<div class="tableView-content-leftPanel__title">班级列表</div>
+			<ul class="tableView-content-leftPanel__list">
+				<li *ngFor="let class of classes" (click)="getCurrentClassName(class.name)" [ngClass]="{'--active': className === class.name}">{{class.name}}</li>
+			</ul>
+		</div>
+		<div class="tableView-content-rightPanel" #rightPanel>
+			<div class="tableView-content-rightPanel__title">学生列表</div>
+			<ul class="tableView-content-rightPanel__list">
+				<li></li>
+			</ul>
+		</div>
+	</div>
+</div>

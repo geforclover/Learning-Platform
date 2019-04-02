@@ -1,0 +1,430 @@
+{
+  "treeNodes": [
+  {
+    "id": "34aa4ff0-f7a6-43b3-853e-26edfc42477a",
+    "open": true,
+    "icon": "../libs/images/demo/tree/doc.png",
+    "parentId": 0,
+    "name": "第一组"
+  },
+  {
+    "id": "85582eec-0675-4174-acbe-04707a0494c6",
+    "icon": "../libs/images/demo/tree/doc.png",
+    "parentId": 0,
+    "name": "第二组"
+  },
+  {
+    "id": "4595373f-ada2-4c18-a7df-7ede9f8eb83d",
+    "icon": "../libs/images/demo/tree/doc.png",
+    "parentId": 0,
+    "name": "第三组"
+  },
+  {
+    "id": "6bf5a1a0-6b33-4706-99ab-6da4daa2a29f",
+    "icon": "../libs/images/demo/tree/doc.png",
+    "parentId": 0,
+    "name": "第四组"
+  },
+  {
+    "id": "70bb228a-4cd0-4503-b8e9-1745ebf0b845",
+    "icon": "../libs/images/demo/tree/doc.png",
+    "parentId": 0,
+    "name": "第五组"
+  },
+  {
+    "id": "0cd324ef-d1cf-4e9d-87df-4f044efc0ee7",
+    "icon": "../libs/images/demo/tree/doc.png",
+    "parentId": 0,
+    "name": "第六组"
+  },
+  {
+    "id": "abb7c226-cddd-4efc-b8ab-71ade93406ef",
+    "icon": "../libs/images/demo/tree/doc.png",
+    "parentId": 0,
+    "name": "第七组"
+  },
+  {
+    "id": "ff002ea3-79af-4cf3-8fbd-3c92aa5d4165",
+    "icon": "../libs/images/demo/tree/doc.png",
+    "parentId": 0,
+    "name": "第八组"
+  },
+  {
+    "id": "ca7f3d4d-b565-42f0-b637-04c1c0ba554e",
+    "icon": "../libs/images/demo/tree/doc.png",
+    "parentId": 0,
+    "name": "选读课文"
+  },
+  {
+    "id": "57477b5a-caa7-4fe5-9484-ddc6d47232da",
+    "icon": "../libs/images/demo/tree/doc.png",
+    "parentId": 0,
+    "name": "生字表（一）"
+  },
+  {
+    "id": "69b9c85b-74df-45e7-80bd-0ea0e385c28e",
+    "icon": "../libs/images/demo/tree/doc.png",
+    "parentId": 0,
+    "name": "生字表（二）"
+  },
+  {
+    "id": "5da1cbbd-3cc7-4992-a21e-b033b6c61f41",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "34aa4ff0-f7a6-43b3-853e-26edfc42477a",
+    "name": "1 窃读记"
+  },
+  {
+    "id": "4ecd802a-3382-4ac3-9b82-53b85cb5ae97",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "34aa4ff0-f7a6-43b3-853e-26edfc42477a",
+    "name": "2 小苗与大树的对话"
+  },
+  {
+    "id": "ccf66070-e8f6-4597-ae1e-62a84b3dc1e1",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "34aa4ff0-f7a6-43b3-853e-26edfc42477a",
+    "name": "3 走遍天下书为侣"
+  },
+  {
+    "id": "f903f827-3c70-4ae5-84f0-34ef8f98396a",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "34aa4ff0-f7a6-43b3-853e-26edfc42477a",
+    "name": "4 我的“长生果”"
+  },
+  {
+    "id": "1cdb6491-b895-4408-a413-5c586d0bda7f",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "34aa4ff0-f7a6-43b3-853e-26edfc42477a",
+    "name": "口语交际·习作一"
+  },
+  {
+    "id": "1b533354-e3df-4324-baaa-f16a10ed2a38",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "34aa4ff0-f7a6-43b3-853e-26edfc42477a",
+    "name": "回顾·拓展一"
+  },
+  {
+    "id": "e3b81241-eeb7-42b5-a044-6cc47d75f6c1",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "34aa4ff0-f7a6-43b3-853e-26edfc42477a",
+    "name": "词语盘点"
+  },
+  {
+    "id": "a438b72a-17f7-43c6-9a35-c054518a96c5",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "85582eec-0675-4174-acbe-04707a0494c6",
+    "name": "词语盘点"
+  },
+  {
+    "id": "44558034-a0fa-4ac9-9f10-f061221290b3",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "85582eec-0675-4174-acbe-04707a0494c6",
+    "name": "5 古诗词三首"
+  },
+  {
+    "id": "fce7afab-666e-4a66-b47c-96c8c9ca2420",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "85582eec-0675-4174-acbe-04707a0494c6",
+    "name": "6 梅花魂"
+  },
+  {
+    "id": "97a1706a-9852-4ef5-8b8e-df34ee5186c9",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "85582eec-0675-4174-acbe-04707a0494c6",
+    "name": "7 桂花雨"
+  },
+  {
+    "id": "0f109681-e997-4bca-8812-cf7e90ff7f32",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "85582eec-0675-4174-acbe-04707a0494c6",
+    "name": "8 小桥流水人家"
+  },
+  {
+    "id": "c093b362-541b-4f37-bcab-f3aa97829867",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "85582eec-0675-4174-acbe-04707a0494c6",
+    "name": "口语交际·习作二"
+  },
+  {
+    "id": "786d84c2-aa63-4ab5-9420-71f273d77e1a",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "85582eec-0675-4174-acbe-04707a0494c6",
+    "name": "回顾·拓展二"
+  },
+  {
+    "id": "d0386a86-348c-4f4b-8b65-285a147acb38",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "4595373f-ada2-4c18-a7df-7ede9f8eb83d",
+    "name": "词语盘点"
+  },
+  {
+    "id": "aa1531d7-4ae3-4100-a0a9-a1b852f41b68",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "4595373f-ada2-4c18-a7df-7ede9f8eb83d",
+    "name": "9 鲸"
+  },
+  {
+    "id": "96850ca2-c96c-43cd-8f7d-c8202623cc74",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "4595373f-ada2-4c18-a7df-7ede9f8eb83d",
+    "name": "10 松鼠"
+  },
+  {
+    "id": "c00bd463-e69e-4c8e-b041-a0fd92bb3cb4",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "4595373f-ada2-4c18-a7df-7ede9f8eb83d",
+    "name": "11 新型玻璃"
+  },
+  {
+    "id": "ea7bdbea-6569-48da-9173-0a1bd3509246",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "4595373f-ada2-4c18-a7df-7ede9f8eb83d",
+    "name": "12 假如没有灰尘"
+  },
+  {
+    "id": "26e45442-2cc3-4dee-b494-a6825c722abc",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "4595373f-ada2-4c18-a7df-7ede9f8eb83d",
+    "name": "口语交际·习作三"
+  },
+  {
+    "id": "b0475e46-6121-4559-b7df-fbe1df6bf7d7",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "4595373f-ada2-4c18-a7df-7ede9f8eb83d",
+    "name": "回顾·拓展三"
+  },
+  {
+    "id": "5d72cea7-679b-45c5-be19-10f2fa56b190",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "6bf5a1a0-6b33-4706-99ab-6da4daa2a29f",
+    "name": "词语盘点"
+  },
+  {
+    "id": "4429aae7-ff99-4ab6-8cc5-a1ce9a17a91b",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "6bf5a1a0-6b33-4706-99ab-6da4daa2a29f",
+    "name": "13 钓鱼的启示"
+  },
+  {
+    "id": "463bf51f-7823-4684-ac8e-773431692c0c",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "6bf5a1a0-6b33-4706-99ab-6da4daa2a29f",
+    "name": "14 通往广场的路不止一条"
+  },
+  {
+    "id": "232eeb4c-168a-4504-a9af-d3aa7273a649",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "6bf5a1a0-6b33-4706-99ab-6da4daa2a29f",
+    "name": "15 落花生"
+  },
+  {
+    "id": "affc4172-db6e-4f99-80da-2f135d57e788",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "6bf5a1a0-6b33-4706-99ab-6da4daa2a29f",
+    "name": "16 珍珠鸟"
+  },
+  {
+    "id": "fcf3de3e-2428-4925-854d-40dcc78a5cc9",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "6bf5a1a0-6b33-4706-99ab-6da4daa2a29f",
+    "name": "口语交际·习作四"
+  },
+  {
+    "id": "9792a7dc-29f8-4d6f-a44b-d0f018969e73",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "6bf5a1a0-6b33-4706-99ab-6da4daa2a29f",
+    "name": "回顾·拓展四"
+  },
+  {
+    "id": "d42fe108-b102-4aae-a3da-48a15e4b90f9",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "0cd324ef-d1cf-4e9d-87df-4f044efc0ee7",
+    "name": "词语盘点"
+  },
+  {
+    "id": "437b209f-749f-4382-99b0-2a7460d05af0",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "0cd324ef-d1cf-4e9d-87df-4f044efc0ee7",
+    "name": "17 地震中的父与子"
+  },
+  {
+    "id": "6ae79ce5-380b-4366-af03-1446fcc289da",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "0cd324ef-d1cf-4e9d-87df-4f044efc0ee7",
+    "name": "18 慈母情深"
+  },
+  {
+    "id": "78760098-2170-4452-aee4-76ec755a4332",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "0cd324ef-d1cf-4e9d-87df-4f044efc0ee7",
+    "name": "19 “精彩极了”和“糟糕透了”"
+  },
+  {
+    "id": "dc484644-3715-4946-a637-1f5ba5d71317",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "0cd324ef-d1cf-4e9d-87df-4f044efc0ee7",
+    "name": "20 学会看病"
+  },
+  {
+    "id": "c0e42f9d-d147-4dc1-a5f5-7fefa001af8c",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "0cd324ef-d1cf-4e9d-87df-4f044efc0ee7",
+    "name": "口语交际·习作六"
+  },
+  {
+    "id": "995194da-b84e-40a2-96a1-9854be0da9f9",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "0cd324ef-d1cf-4e9d-87df-4f044efc0ee7",
+    "name": "回顾·拓展六"
+  },
+  {
+    "id": "c6513cb9-68b1-4336-861f-40c930971270",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "abb7c226-cddd-4efc-b8ab-71ade93406ef",
+    "name": "词语盘点"
+  },
+  {
+    "id": "972f78da-e163-4860-8d62-52ded77a5db8",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "abb7c226-cddd-4efc-b8ab-71ade93406ef",
+    "name": "21 圆明园的毁灭"
+  },
+  {
+    "id": "d833ead9-bd61-44f4-a8c3-c1fca8cf242d",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "abb7c226-cddd-4efc-b8ab-71ade93406ef",
+    "name": "22 狼牙山五壮士"
+  },
+  {
+    "id": "c04cd64b-9b89-4ace-984b-322d22971f30",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "abb7c226-cddd-4efc-b8ab-71ade93406ef",
+    "name": "23 难忘的一课"
+  },
+  {
+    "id": "07e847f1-787f-4011-8bde-d0b9a1ed06e4",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "abb7c226-cddd-4efc-b8ab-71ade93406ef",
+    "name": "24 最后一分钟"
+  },
+  {
+    "id": "0afaff3c-aa0c-4a32-a635-431e7a38d6f2",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "abb7c226-cddd-4efc-b8ab-71ade93406ef",
+    "name": "口语交际·习作七"
+  },
+  {
+    "id": "09b488dd-6168-4e86-a5da-1892f963ed7e",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "abb7c226-cddd-4efc-b8ab-71ade93406ef",
+    "name": "回顾·拓展七"
+  },
+  {
+    "id": "49aecd1a-f594-46e2-aa1f-50c6d3c4cf80",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "ff002ea3-79af-4cf3-8fbd-3c92aa5d4165",
+    "name": "词语盘点"
+  },
+  {
+    "id": "f89ce253-796b-4820-b9fc-744d311afa59",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "ff002ea3-79af-4cf3-8fbd-3c92aa5d4165",
+    "name": "25 七律·长征"
+  },
+  {
+    "id": "1bb8f008-d828-457e-bea8-49c4d128186f",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "ff002ea3-79af-4cf3-8fbd-3c92aa5d4165",
+    "name": "26 开国大典"
+  },
+  {
+    "id": "0aa94e04-ba72-4e55-8363-38d540786b0c",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "ff002ea3-79af-4cf3-8fbd-3c92aa5d4165",
+    "name": "27.青山处处埋忠骨"
+  },
+  {
+    "id": "1be6312a-bbd0-4538-bba6-0a4bc057ee3a",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "ff002ea3-79af-4cf3-8fbd-3c92aa5d4165",
+    "name": "28.毛主席在花山"
+  },
+  {
+    "id": "070d2c01-e81f-460d-a030-8b0716c92e74",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "ff002ea3-79af-4cf3-8fbd-3c92aa5d4165",
+    "name": "口语交际·习作八"
+  },
+  {
+    "id": "c13d18cf-fff3-4db2-9968-4a31cde11641",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "ff002ea3-79af-4cf3-8fbd-3c92aa5d4165",
+    "name": "回顾·拓展八"
+  },
+  {
+    "id": "6a895d54-b675-4a0b-be70-61030797df9c",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "70bb228a-4cd0-4503-b8e9-1745ebf0b845",
+    "name": "综合性学习：遨游汉字王国"
+  },
+  {
+    "id": "e6e49e89-c505-4fb8-a747-6f29f2790989",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "70bb228a-4cd0-4503-b8e9-1745ebf0b845",
+    "name": "有趣的汉字"
+  },
+  {
+    "id": "3a19d979-431e-4ffa-a8b7-c657270a9c7f",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "70bb228a-4cd0-4503-b8e9-1745ebf0b845",
+    "name": "我爱你，汉字"
+  },
+  {
+    "id": "ba72c261-ef75-4166-897b-31b9067df875",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "ca7f3d4d-b565-42f0-b637-04c1c0ba554e",
+    "name": "1 黄果树听瀑"
+  },
+  {
+    "id": "ba1f5e9f-f73b-4493-b6b0-374bb6b53479",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "ca7f3d4d-b565-42f0-b637-04c1c0ba554e",
+    "name": "2 斗笠"
+  },
+  {
+    "id": "147b25ff-3860-4557-8352-3c8c081f269a",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "ca7f3d4d-b565-42f0-b637-04c1c0ba554e",
+    "name": "3 太空“清洁工”"
+  },
+  {
+    "id": "66f630f1-ebc7-40ae-9ed9-2041474bc2a9",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "ca7f3d4d-b565-42f0-b637-04c1c0ba554e",
+    "name": "4 鞋匠的儿子"
+  },
+  {
+    "id": "a9a6f419-bda1-4a2a-862f-87bece4b2f1b",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "ca7f3d4d-b565-42f0-b637-04c1c0ba554e",
+    "name": "5 剥豆"
+  },
+  {
+    "id": "cdc697e3-da38-4164-895c-deae6a803f20",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "ca7f3d4d-b565-42f0-b637-04c1c0ba554e",
+    "name": "6 你一定会听见的"
+  },
+  {
+    "id": "d0bb17f0-fb6c-468a-9925-5ccfa45a462a",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "ca7f3d4d-b565-42f0-b637-04c1c0ba554e",
+    "name": "7 木笛"
+  },
+  {
+    "id": "adf11e86-05d4-4b86-b344-f1a5ddca408c",
+    "icon": "../libs/images/demo/tree/open_folder.png",
+    "parentId": "ca7f3d4d-b565-42f0-b637-04c1c0ba554e",
+    "name": "8 百泉村(四章)"
+  }]
+}

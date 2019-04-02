@@ -1,0 +1,57 @@
+<div class="tableView --zoomIn">
+  <div class="tableView-title">
+    <span class="tableView-title__name">我要提问</span>
+    <span class="tableView-title__icon">
+    <img src="/assets/images/icons/icon-zoomIn.png" alt="" (click)="setZoomClass(false)">
+    <img src="/assets/images/icons/icon-zoomOut.png" alt="" (click)="setZoomClass(true)">
+    <img src="/assets/images/icons/icon-close.png" alt="" tableViewClose>
+  </span>
+  </div>
+  <div class="tableView-content">
+    <div class="tableView-content-heading" #tableHeading>
+      <span>筛选年级：</span>
+      <div class="--filters" (click)="popLeftPanel()">
+        <span class="--filters__name">{{gradeName}}</span>
+        <span class="--filters__icon" *ngIf="subjectName !== undefined" (click)="resetSingleFilter(subjectName)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shanchu"></use></svg></span>
+      </div>
+      <span>筛选科目：</span>
+      <div class="--filters" (click)="popRightPanel()">
+        <span class="--filters__name">{{subjectName}}</span>
+        <span class="--filters__icon" *ngIf="versionName !== undefined" (click)="resetSingleFilter(versionName)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shanchu"></use></svg></span>
+      </div>
+      <div class="--filters-button" (click)="resetFilters()">重置</div>
+    </div>
+    <div class="tableView-content-main" #tableViewMain>
+      <div class="textareaForm">
+        <div class="textareaForm-item">
+          <span class="textareaForm-item__label">你的困惑</span>
+          <div class="textareaForm-item__input">
+            <input type="text" placeholder="一句话告诉你的困惑点，获得老师针对性解答">
+          </div>
+        </div>
+        <div class="textareaForm-item">
+          <span class="textareaForm-item__label">提出问题</span>
+          <div class="textareaForm-item__input">
+            <app-tiny-editor [elementId]="'answer-willAsk'" (onEditorContentChange)="keyupHandler($event)"></app-tiny-editor>
+          </div>
+        </div>
+        <div class="textareaForm-button">
+          <span (click)="createHomework()">提交问题</span>
+        </div>
+      </div>
+    </div>
+    <div class="tableView-content-leftPanel" #leftPanel>
+      <div class="tableView-content-leftPanel__title">年级列表</div>
+      <ul class="tableView-content-leftPanel__list">
+        <li *ngFor="let grade of grades" (click)="getCurrentGradeName(grade.name)" [ngClass]="{'--active': gradeName === grade.name}">{{grade.name}}</li>
+      </ul>
+    </div>
+    <div class="tableView-content-rightPanel" #rightPanel>
+      <div class="tableView-content-rightPanel__title">科目列表</div>
+      <ul class="tableView-content-rightPanel__list">
+        <li *ngFor="let subject of subjects" (click)="getCurrentSubjectName(subject.name)" [ngClass]="{'--active': subjectName === subject.name}">{{subject.name}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

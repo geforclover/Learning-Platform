@@ -1,0 +1,22 @@
+<div class="list-view" appPaddingBox>
+    <div class="list-view-item list-card padding-0-4vw-0-3vw" *ngFor="let list of answerLists" [attr.name]="list._c_value">
+        <div class="list-card-label label label-triangleUR --upper-right"><span><svg class="icon" aria-hidden="true"><use attr.xlink:href={{subIcon[subName.indexOf(list._c_value)]}}></use></svg></span></div>
+        <div class="list-card-label label label-bookmark --upper-left">
+            <span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shoucang"></use></svg></span>
+            <span>{{list.shoucang}}</span>
+        </div>
+        <div class="list-card-label label label-steeple --lower-left">
+            <span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-huida1"></use></svg></span>
+            <span>{{list.huida}}</span>
+        </div>
+        <div class="list-card-header">
+            <span>{{list.name}}</span><span>{{list.gradename}}</span>
+        </div>
+        <div class="list-card-inner">
+            <a href="" [routerLink]="['../answer-reply']" (click)="setCurrentAnswerReply(list)">{{list.problemname}}</a>
+        </div>
+        <div class="list-card-footer">
+            <span>{{list.problemtime}}</span>
+        </div>
+    </div>
+</div>

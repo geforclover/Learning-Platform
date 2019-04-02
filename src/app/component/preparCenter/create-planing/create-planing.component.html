@@ -1,0 +1,115 @@
+<div class="tableView tableCreate">
+	<div class="tableView-title">
+		<span class="tableView-title__name">创建教学计划　CREATE PLANING</span>
+		<span class="tableView-title__icon">
+			<img src="/assets/images/icons/icon-close.png" alt="" tableViewClose>
+		</span>
+	</div>
+	<div class="tableView-form" ng-controller="createHomeworkCtrl">
+		<input type="hidden" id="TzFiles" *ngIf="selectedWorkValue === '0e7e71f6-3b37-4486-82b7-20df6280080a'" />
+		<input type="hidden" id="CtFiles" *ngIf="selectedWorkValue === '909b0d1c-ce08-45a1-a2af-c554bb00a904'" />
+		<input type="hidden" id="CsFiles" *ngIf="selectedWorkValue === 'df645a77-6495-4e3b-9b9d-98171fc0f1a7'" />
+		<div class="createForm">
+			<div class="createForm-item">
+				<span class="createForm-item__label">计划名称</span>
+				<div class="createForm-item__input">
+					<input required="required" name="planingName" type="text" [(ngModel)]="planingName"><label alt="计划名称" placeholder="计划名称"></label>
+				</div>
+			</div>
+			<div class="createForm-item">
+				<span class="createForm-item__label">学　　段</span>
+				<div class="createForm-item__checkbox">
+					<span class="createForm-item__checkbox--item" *ngFor="let stage of termStages" (click)="setActiveClass()" [ngClass]="{'--active': termStageName === stage.key}">{{stage.key}}</span>
+				</div>
+			</div>
+			<div class="createForm-item">
+				<span class="createForm-item__label">科　　目</span>
+				<div class="createForm-item__checkbox">
+					<span class="createForm-item__checkbox--item" *ngFor="let subject of subjects" (click)="setActiveClass()" [ngClass]="{'--active': subjectName === subject.name}">{{subject.name}}</span>
+				</div>
+			</div>
+			<div class="createForm-item">
+				<span class="createForm-item__label">学　　年</span>
+				<div class="createForm-item__checkbox">
+					<span class="createForm-item__checkbox--item" *ngFor="let year of termYears" (click)="setActiveClass()" [ngClass]="{'--active': termYearName === year.key}">{{year.key}}</span>
+				</div>
+			</div>
+			<div class="createForm-item">
+				<span class="createForm-item__label">学　　期</span>
+				<div class="createForm-item__checkbox">
+					<span class="createForm-item__checkbox--item" *ngFor="let term of terms" (click)="setActiveClass()" [ngClass]="{'--active': termsName === term.key}">{{term.key}}</span>
+				</div>
+			</div>
+			<div class="createForm-item">
+				<span class="createForm-item__label">教　　材</span>
+				<div class="createForm-item__checkbox">
+					<span class="createForm-item__checkbox--item" *ngFor="let version of versions" (click)="setActiveClass()" [ngClass]="{'--active': versionName === version.key}">{{version.key}}</span>
+				</div>
+			</div>
+			<div class="createForm-item">
+				<span class="createForm-item__label">适用年级</span>
+				<div class="createForm-item__checkbox">
+					<span class="createForm-item__checkbox--item" *ngFor="let suitGrade of suitGrades" (click)="setActiveClass()" [ngClass]="{'--active': suitGradeName === suitGrade.key}">{{suitGrade.key}}</span>
+				</div>
+			</div>
+			<div class="createForm-item">
+				<span class="createForm-item__label">教学进度</span>
+				<div class="createForm-item__input">
+					<app-tiny-editor [elementId]="'create-planing'" (onEditorContentChange)="keyupHandler($event)"></app-tiny-editor>
+				</div>
+			</div>
+			<div class="createForm-button">
+				<span (click)="createHomework()">添加作业</span>
+				<span>删除作业</span>
+				<span>发布作业</span>
+				<span>暂不发布</span>
+			</div>
+		</div>
+		<div class="createRelation" *ngIf="isRelation === true">
+			<div class="createRelation-item">
+				<span class="createRelation-item__label">科　　目</span>
+				<div class="createRelation-item__checkbox">
+					<span class="createRelation-item__checkbox--item active"></span>
+				</div>
+			</div>
+			<div class="createRelation-item">
+				<span class="createRelation-item__label">年　　级</span>
+				<div class="createRelation-item__checkbox">
+					<span class="createRelation-item__checkbox--item active"></span>
+				</div>
+			</div>
+			<div class="createRelation-item">
+				<span class="createRelation-item__label">试卷列表</span>
+				<ul class="createRelation-item__list">
+					<li>
+						<span class="createRelation-item__list--paper">
+							<span class="_title"></span><span class="_time"></span>
+						</span>
+						<span class="createRelation-item__list--btn">
+							<input type="button" value="选择试卷" (click)="setPaperName(item.mainTitle, item.examPaperId)">
+							<input type="button" value="预览" (click)="viewTestPaper(item.examPaperId, true, item.mainTitle)">
+						</span>
+					</li>
+					<li class="pageList">
+						<a (click)="selectPage($index + 1)"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="createRelation-button">
+				<span (click)="openRelation(false)">返回</span>
+				<span>新的组卷</span>
+				<span>暂不发布</span>
+			</div>
+		</div>
+		<div class="creatSubset">
+			<div class="labelCard">
+				<div class="labelCard-card" *ngFor="let group of chaptersGroup">
+					<h3 class="labelCard-title">{{group.name}}</h3>
+					<ul class="labelCard-item">
+						<li *ngFor="let item of group.children">{{item.name}}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

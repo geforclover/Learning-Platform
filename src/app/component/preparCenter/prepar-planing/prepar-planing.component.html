@@ -1,0 +1,77 @@
+<div class="tableView --zoomOut">
+	<div class="tableView-title">
+		<span class="tableView-title__name">教学计划列表</span>
+		<span class="tableView-title__icon">
+			<img src="/assets/images/icons/icon-zoomIn.png" alt="" (click)="setZoomClass(false)">
+			<img src="/assets/images/icons/icon-zoomOut.png" alt="" (click)="setZoomClass(true)">
+			<img src="/assets/images/icons/icon-close.png" alt="" tableViewClose>
+		</span>
+	</div>
+	<div class="tableView-content">
+		<div class="tableView-content-heading filterView" #tableHeading>
+			<div class="filterView-item">
+				<span class="filterView-item__label">学年</span>
+				<ul class="filterView-item__list"><li *ngFor="let year of planListYears" [class.--active]="year === _year" (click)="setPlanFilter('year', setPlanYear(year))">{{year}}</li></ul>
+			</div>
+			<div class="filterView-item">
+				<span class="filterView-item__label">学期</span>
+				<ul class="filterView-item__list"><li *ngFor="let term of planListTerms" [class.--active]="term === _term" (click)="setPlanFilter('term', setPlanTerm(term))">{{term}}</li></ul>
+			</div>
+		</div>
+		<div class="tableView-content-main" #tableViewMain>
+			<div class="mainView-left">
+				<ul class="user-list">
+					<li *ngFor="let item of planLists; let i = index" (click)="viewCurrentPlan(item)" (mouseenter)="showOperate = i" (mouseleave)="showOperate = null" [ngClass]="{'--active': planItem === item}">
+						<span class="user-list__name">{{item.programname || '暂无计划'}}</span>
+						<div class="user-list-operate" [class.--active]="showOperate === i"><span>编辑</span><span>删除</span><span>导出</span><span>附件</span></div>
+					</li>
+				</ul>
+			</div>
+			<div class="mainView-right -flex">
+				<div class="createView">
+					<div class="createView-item">
+						<span class="createView-item__label">计划名称</span><span class="createView-item__view">{{viewTitle}}</span>
+					</div>
+					<div class="createView-item">
+						<span class="createView-item__label">学　　校</span><span class="createView-item__view"></span>
+					</div>
+					<div class="createView-item">
+						<span class="createView-item__label">科　　目</span><span class="createView-item__view">{{viewSubject}}</span>
+					</div>
+					<div class="createView-item">
+						<span class="createView-item__label">学　　年</span><span class="createView-item__view">{{viewYears}}</span>
+					</div>
+					<div class="createView-item">
+						<span class="createView-item__label">教　　材</span><span class="createView-item__view">{{viewVersion}}</span>
+					</div>
+					<div class="createView-item">
+						<span class="createView-item__label">学　　期</span><span class="createView-item__view">{{viewTerm}}</span>
+					</div>
+					<div class="createView-item">
+						<span class="createView-item__label">教　　师</span><span class="createView-item__view"></span>
+					</div>
+					<div class="createView-item">
+						<span class="createView-item__label">教学进度</span><span class="createView-item__view"></span>
+					</div>
+					<div class="createView-item">
+						<span class="createView-item__label">附　　件</span><span class="createView-item__view"></span>
+					</div>
+				</div>
+				<div class="createView">
+					<div class="createView-table">
+						<div class="createView-table__card" (mouseenter)="_hoverCard = !_hoverCard" (mouseleave)="_hoverCard = !_hoverCard" [ngClass]="{'_onHover': _hoverCard === true, '_onLeave': _hoverCard === false}">
+							<ul class="_static">
+								<li>作业类型：</li>
+								<li>完成类型：</li>
+							</ul>
+							<div class="_hover">
+								<span>作业内容：</span>
+								<div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

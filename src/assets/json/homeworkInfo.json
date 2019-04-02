@@ -1,0 +1,86 @@
+[
+{
+  "createtime": 1500865623000,
+  "completionid": "bb45eacd-8f23-481a-b2d5-b8a77831f1d3",
+  "coursename": "语文",
+  "offid": "1",
+  "author": "b48cab70-4c44-4072-bc70-72d65897a87f",
+  "homeworkinfo": [
+  {
+    "homeworkinfoid": "6b2dd05e-09aa-4850-88cc-8ec0b9547d00",
+    "homeworktype": "0e7e71f6-3b37-4486-82b7-20df6280080a",
+    "oktype": "14a3113b-1ff6-41ef-ad20-bb4b37900792",
+    "names": "2017年 07月24号作业",
+    "decs": "<p>sadasdasd</p>\n",
+    "homeworkid": "3301982d-4223-43cf-9be3-37fd63147a80",
+    "homeworkfiles": []
+  },
+  {
+    "homeworkinfoid": "ad4d9356-af08-4ad0-a5d6-6f34f2c720d2",
+    "homeworktype": "0e7e71f6-3b37-4486-82b7-20df6280080a",
+    "oktype": "14a3113b-1ff6-41ef-ad20-bb4b37900792",
+    "names": "2017年 07月24号作业",
+    "decs": "<p>a123123213</p>\n",
+    "homeworkid": "3301982d-4223-43cf-9be3-37fd63147a80",
+    "homeworkfiles": []
+  }],
+  "completionnum": 0,
+  "homeworkid": "3301982d-4223-43cf-9be3-37fd63147a80",
+  "names": "2017年07月24号作业",
+  "totalnum": 3,
+  "homeworkRange": "小学一年级一班-小学一年级二班",
+  "publishtime": 1500865639000,
+  "authorname": "教师二",
+  "siteId": 11,
+  "complete": 1501470423000,
+  "courseid": "subj0001",
+  "goodnum": 0,
+  "decs": "123123123"
+},
+{
+  "createtime": 1500864423000,
+  "completionid": "f6a69766-3d52-4633-bc80-b5ed4cedfade",
+  "coursename": "语文",
+  "offid": "1",
+  "author": "b48cab70-4c44-4072-bc70-72d65897a87f",
+  "homeworkinfo": [
+  {
+    "homeworkinfoid": "246530d7-055b-4e34-86aa-488cfe3dcd30",
+    "homeworktype": "0e7e71f6-3b37-4486-82b7-20df6280080a",
+    "oktype": "14a3113b-1ff6-41ef-ad20-bb4b37900792",
+    "names": "2017年 07月24号作业",
+    "decs": "<p>1111</p>\n",
+    "homeworkid": "ca769c0d-8bab-4261-baf4-b925ad9bb3d8",
+    "homeworkfiles": []
+  },
+  {
+    "homeworkinfoid": "8c9095bf-5424-4483-8efe-4170ccf6964a",
+    "homeworktype": "0e7e71f6-3b37-4486-82b7-20df6280080a",
+    "oktype": "14a3113b-1ff6-41ef-ad20-bb4b37900792",
+    "names": "2017年 07月24号作业",
+    "decs": "<p>123123123</p>\n",
+    "homeworkid": "ca769c0d-8bab-4261-baf4-b925ad9bb3d8",
+    "homeworkfiles": []
+  },
+  {
+    "homeworkinfoid": "b16a5041-8558-43e1-a95c-572f40a3e102",
+    "homeworktype": "0e7e71f6-3b37-4486-82b7-20df6280080a",
+    "oktype": "14a3113b-1ff6-41ef-ad20-bb4b37900792",
+    "names": "2017年 07月24号作业",
+    "decs": "<p>123123123</p>\n",
+    "homeworkid": "ca769c0d-8bab-4261-baf4-b925ad9bb3d8",
+    "homeworkfiles": []
+  }],
+  "completionnum": 0,
+  "homeworkid": "ca769c0d-8bab-4261-baf4-b925ad9bb3d8",
+  "names": "2017年07月24号作业",
+  "totalnum": 3,
+  "homeworkRange": "小学一年级一班-小学一年级二班",
+  "publishtime": 1500864435000,
+  "authorname": "教师二",
+  "siteId": 11,
+  "complete": 1501469223000,
+  "courseid": "subj0001",
+  "goodnum": 0,
+  "decs": "111"
+}]

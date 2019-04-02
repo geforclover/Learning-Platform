@@ -1,0 +1,36 @@
+<div class="workStatus">
+	<div class="workStatus-avater"></div>
+	<div class="workStatus-progress">
+		<div class="workStatus-progress__wrap">
+			<span class="workStatus-progress__percentage">批概率：</span>
+		</div>
+		<div class="workStatus-progress__strip">
+			<div class="workStatus-progress__current"></div>
+		</div>
+	</div>
+	<div class="workStatus-status">
+		<div class="workStatus-status__item">
+			<span class="item-label _item-yellow"><span></span>/<span></span></span>
+			<span class="item-text">作业批改数</span>
+		</div>
+	</div>
+</div>
+<div class="workList" id="workList">
+	<div class="workList-label">
+		<span>序号</span>
+		<span>作业名称</span>
+		<span>作业发布时间</span>
+		<span>作业科目</span>
+		<span>一键催交</span>
+	</div>
+	<div class="workList-item" *ngFor="let info of homeworkinfos; let i = index; ">
+		<span>{{i + 1}}</span>
+		<span [innerHTML]="info.decs"></span>
+		<span>{{homeworkInfos.createtime}}</span>
+		<span>{{homeworkInfos.coursename}}</span>
+		<span [ngClass]="{'_excellent': homeworkInfos.goodnum > 0}">{{homeworkInfos.goodnum === 0?'待定': ''}}
+			<svg class="icon" aria-hidden="true" *ngIf="homeworkInfos.goodnum > 0"><use xlink:href="#icon-jiangzhang1"></use></svg>
+		</span>
+	</div>
+	<app-page-mark [pageMark]="pageMark"></app-page-mark>
+</div>

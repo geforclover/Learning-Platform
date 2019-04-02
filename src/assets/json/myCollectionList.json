@@ -1,0 +1,32 @@
+{
+    "page": {
+        "pager.pageNo": 1,
+        "error": "",
+        "errorCode": 0,
+        "pager.totalRows": 2,
+        "rows": [
+            {
+                "collectid": "d70d9f8d-e2bf-4851-9daf-f509513376ec",
+                "problemname": "蝉为什么会蜕皮?",
+                "_c_value": "语文",
+                "name": "教师1",
+                "shoucang": 1,
+                "collecttime": "2017-09-05 19:34:00",
+                "huida": 1,
+                "gradename": "小学一年级2",
+                "problemid": "8e1e6136-d514-4a89-bb5a-7a80d64d69df"
+            },
+            {
+                "collectid": "97f87f7a-b392-4c4f-8b89-a9734fe0b702",
+                "problemname": "54+6=?",
+                "_c_value": "数学",
+                "name": "学生1",
+                "shoucang": 1,
+                "collecttime": "2017-02-23 15:41:00",
+                "huida": 1,
+                "gradename": "小学一年级2",
+                "problemid": "7f6a95bf-ef30-4672-8828-607bd8e729de"
+            }
+        ]
+    }
+}

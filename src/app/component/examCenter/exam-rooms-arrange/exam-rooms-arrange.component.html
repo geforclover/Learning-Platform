@@ -1,0 +1,70 @@
+<div class="tableView tableCreate">
+	<div class="tableView-title">
+		<span class="tableView-title__name">考场编排　EXAM ROOMS ARRANGE</span>
+		<span class="tableView-title__icon">
+			<img src="/assets/images/icons/icon-close.png" alt="" tableViewClose>
+		</span>
+	</div>
+	<div class="tableView-form" ng-controller="createHomeworkCtrl">
+		<div class="createForm">
+			<div class="createForm-item">
+				<span class="createForm-item__label">考试名称</span>
+				<div class="createForm-item__checkbox">
+					<span class="createForm-item__checkbox--item" *ngFor="let name of examNames" (click)="setActiveClass(name.key)" [ngClass]="{'--active': examName === name.key}">{{name.key}}</span>
+				</div>
+			</div>
+			<div class="createForm-item">
+				<span class="createForm-item__label">考试年级</span>
+				<div class="createForm-item__checkbox">
+					<span class="createForm-item__checkbox--item" *ngFor="let grade of examGrades" (click)="setActiveClass()" [ngClass]="{'--active': examGrade === grade.key}">{{grade.key}}</span>
+				</div>
+			</div>
+			<div class="createForm-item">
+				<span class="createForm-item__label">编排规则</span>
+				<div class="createForm-item__checkbox">
+          <span class="createForm-item__checkbox--item" (click)="setArrangeRule('classIndex')" [ngClass]="{'--active': arrangeRule === 'classIndex'}">班级序号</span>
+          <span class="createForm-item__checkbox--item" (click)="setArrangeRule('examRank')" [ngClass]="{'--active': arrangeRule === 'examRank'}">某次考试成绩</span>
+          <span class="createForm-item__checkbox--item" (click)="setArrangeRule('subjectRank')" [ngClass]="{'--active': arrangeRule === 'subjectRank'}">某科成绩</span>
+          <span class="createForm-item__checkbox--item" (click)="setArrangeRule('nameIndex')" [ngClass]="{'--active': arrangeRule === 'nameIndex'}">姓氏笔画</span>
+				</div>
+			</div>
+			<div class="createForm-item">
+				<span class="createForm-item__label">　考场数</span>
+				<div class="createForm-item__input">
+					<input type="text" placeholder="请输入考场数">
+				</div>
+			</div>
+			<div class="createForm-item">
+				<span class="createForm-item__label">排序方式</span>
+				<div class="createForm-item__checkbox">
+          <span class="createForm-item__checkbox--item" (click)="setArrangeType('order')" [ngClass]="{'--active': arrangeType === 'order'}">从前向后</span>
+          <span class="createForm-item__checkbox--item" (click)="setArrangeType('snake')" [ngClass]="{'--active': arrangeType === 'snake'}">Ｓ形排列</span>
+				</div>
+			</div>
+		</div>
+		<div class="creatSubset">
+			<div class="card">
+        <div class="card-header">第一考场</div>
+        <div class="card-content">
+          <div class="card-content-inner">
+            <span>地址</span><span><input type="text" placeholder="第一考场地址"></span>
+            <span>行数</span><span><input type="text" placeholder="第一考场地址"></span>
+            <span>列数</span><span><input type="text" placeholder="第一考场地址"></span>
+            <span>共X座位</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+          <div class="card-header">第二考场</div>
+          <div class="card-content">
+            <div class="card-content-inner">
+              <span>地址</span><span><input type="text" placeholder="第一考场地址"></span>
+              <span>行数</span><span><input type="text" placeholder="第一考场地址"></span>
+              <span>列数</span><span><input type="text" placeholder="第一考场地址"></span>
+              <span>共X座位</span>
+            </div>
+          </div>
+        </div>
+		</div>
+	</div>
+</div>

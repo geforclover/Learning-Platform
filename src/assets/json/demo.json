@@ -1,0 +1,236 @@
+{
+    "brief": "刺绣印花点缀，个性百搭",
+    "cash": 59,
+    "content": null,
+    "mailfee": null,
+    "name": "女式星星短袖T恤",
+    "pic": "2017/06/07/afd0a95b-eb48-4646-b5ae-0566e9063bd2.png",
+    "price": 99,
+    "prodId": 2843,
+    "prodPics": [
+        "2017/06/07/71b4054c-9a44-46ef-a75e-ddfe0a671a8b.png",
+        "2017/06/07/afd0a95b-eb48-4646-b5ae-0566e9063bd2.png"
+    ],
+    "prodPropList": [
+        {
+            "prodPropValList": [
+                {
+                    "isSelected": true,
+                    "name": "黑色",
+                    "propId": 223,
+                    "valueId": 673
+                },
+                {
+                    "isSelected": false,
+                    "name": "白色",
+                    "propId": 223,
+                    "valueId": 680
+                }
+            ],
+            "propId": 223,
+            "propName": "颜色"
+        },
+        {
+            "prodPropValList": [
+                {
+                    "isSelected": true,
+                    "name": "短袖",
+                    "propId": 225,
+                    "valueId": 722
+                },
+                {
+                    "isSelected": false,
+                    "name": "长袖",
+                    "propId": 225,
+                    "valueId": 723
+                }
+            ],
+            "propId": 225,
+            "propName": "款式"
+        },
+        {
+            "prodPropValList": [
+                {
+                    "isSelected": false,
+                    "name": "S",
+                    "propId": 224,
+                    "valueId": 696
+                },
+                {
+                    "isSelected": true,
+                    "name": "M",
+                    "propId": 224,
+                    "valueId": 689
+                },
+                {
+                    "isSelected": false,
+                    "name": "L",
+                    "propId": 224,
+                    "valueId": 690
+                },
+                {
+                    "isSelected": false,
+                    "name": "XL",
+                    "propId": 224,
+                    "valueId": 691
+                }
+            ],
+            "propId": 224,
+            "propName": "尺码"
+        }
+    ],
+    "propValueImgList": [
+        {
+            "imgList": ["2017/06/07/71b4054c-9a44-46ef-a75e-ddfe0a671a8b.png"],
+            "propId": null,
+            "seq": null,
+            "valueId": 680,
+            "valueImage": null,
+            "valueName": null
+        },
+        {
+            "imgList": ["2017/06/07/afd0a95b-eb48-4646-b5ae-0566e9063bd2.png"],
+            "propId": null,
+            "seq": null,
+            "valueId": 673,
+            "valueImage": null,
+            "valueName": null
+        }
+    ],
+    "shareUrl": "http://127.0.0.1:8080/legendshop_mobile/views/2843",
+    "shopId": 53,
+    "shopName": "多多岛252351",
+    "skuDtoList": null,
+    "skuList": [
+        {
+            "cash": 59,
+            "modelId": null,
+            "name": null,
+            "partyCode": null,
+            "price": 59,
+            "promotionPrice": 59,
+            "propValueIds": null,
+            "properties": "223:673;224:696;225:722",
+            "propertiesNameList": null,
+            "ruleList": null,
+            "skuId": 7000,
+            "status": 0,
+            "stocks": 2999,
+            "warehouseProdList": null
+        },
+        {
+            "cash": 59,
+            "modelId": null,
+            "name": null,
+            "partyCode": null,
+            "price": 59,
+            "promotionPrice": 59,
+            "propValueIds": null,
+            "properties": "223:673;224:689;225:722",
+            "propertiesNameList": null,
+            "ruleList": null,
+            "skuId": 7001,
+            "status": 1,
+            "stocks": 3000,
+            "warehouseProdList": null
+        },
+        {
+            "cash": 59,
+            "modelId": null,
+            "name": null,
+            "partyCode": null,
+            "price": 59,
+            "promotionPrice": 59,
+            "propValueIds": null,
+            "properties": "223:673;224:690;225:722",
+            "propertiesNameList": null,
+            "ruleList": null,
+            "skuId": 7002,
+            "status": 1,
+            "stocks": 3000,
+            "warehouseProdList": null
+        },
+        {
+            "cash": 59,
+            "modelId": null,
+            "name": null,
+            "partyCode": null,
+            "price": 59,
+            "promotionPrice": 59,
+            "propValueIds": null,
+            "properties": "223:673;224:691;225:723",
+            "propertiesNameList": null,
+            "ruleList": null,
+            "skuId": 7003,
+            "status": 1,
+            "stocks": 3000,
+            "warehouseProdList": null
+        },
+        {
+            "cash": 59,
+            "modelId": null,
+            "name": null,
+            "partyCode": null,
+            "price": 59,
+            "promotionPrice": 59,
+            "propValueIds": null,
+            "properties": "223:680;224:696;225:723",
+            "propertiesNameList": null,
+            "ruleList": null,
+            "skuId": 7004,
+            "status": 1,
+            "stocks": 0,
+            "warehouseProdList": null
+        },
+        {
+            "cash": 59,
+            "modelId": null,
+            "name": null,
+            "partyCode": null,
+            "price": 59,
+            "promotionPrice": 59,
+            "propValueIds": null,
+            "properties": "223:680;224:689;225:723",
+            "propertiesNameList": null,
+            "ruleList": null,
+            "skuId": 7005,
+            "status": 1,
+            "stocks": 3000,
+            "warehouseProdList": null
+        },
+        {
+            "cash": 59,
+            "modelId": null,
+            "name": null,
+            "partyCode": null,
+            "price": 59,
+            "promotionPrice": 59,
+            "propValueIds": null,
+            "properties": "223:680;224:690;225:722",
+            "propertiesNameList": null,
+            "ruleList": null,
+            "skuId": 7006,
+            "status": 1,
+            "stocks": 0,
+            "warehouseProdList": null
+        },
+        {
+            "cash": 59,
+            "modelId": null,
+            "name": null,
+            "partyCode": null,
+            "price": 59,
+            "promotionPrice": 59,
+            "propValueIds": null,
+            "properties": "223:680;224:691;225:723",
+            "propertiesNameList": null,
+            "ruleList": null,
+            "skuId": 7007,
+            "status": 1,
+            "stocks": 3000,
+            "warehouseProdList": null
+        }
+    ],
+    "skuListJson": null,
+    "status": 1
+}

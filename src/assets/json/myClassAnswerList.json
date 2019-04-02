@@ -1,0 +1,157 @@
+{
+    "page": {
+        "pager.pageNo": 1,
+        "error": "",
+        "errorCode": 0,
+        "pager.totalRows": 13,
+        "rows": [
+            {
+                "problemname":
+                    " 小明和小芳速度之比是7:5，他们分别从家出发相向而行。30分钟后相遇。他们同向而行，小明追上小芳要多久？",
+                "_c_value": "数学",
+                "classname": "二班",
+                "name": "学生1",
+                "shoucang": 0,
+                "huida": 2,
+                "isspecify": "0",
+                "problemid": "51ad8774-8c41-4157-b747-956119b03281",
+                "problemtime": "2017-09-08 15:31:00"
+            },
+            {
+                "problemname": "这时车上有多少位?",
+                "_c_value": "数学",
+                "classname": "二班",
+                "name": "学生1",
+                "shoucang": 0,
+                "huida": 1,
+                "isspecify": "0",
+                "problemid": "3c7ad92f-ce9b-4060-9dc0-12bf20a8cc25",
+                "problemtime": "2017-09-08 15:11:00"
+            },
+            {
+                "problemname": "测试测试测试测试测试",
+                "_c_value": "数学",
+                "classname": "二班",
+                "name": "学生1",
+                "shoucang": 0,
+                "huida": 1,
+                "isspecify": "0",
+                "problemid": "cc764bb5-fbe5-4f4c-834d-da5a1bdf67c4",
+                "problemtime": "2017-09-06 13:31:00"
+            },
+            {
+                "problemname": "56是7的几倍？",
+                "_c_value": "数学",
+                "classname": "二班",
+                "name": "学生1",
+                "shoucang": 0,
+                "huida": 1,
+                "isspecify": "0",
+                "problemid": "132c1ab6-084f-493f-b983-1bc16acd4b34",
+                "problemtime": "2017-09-05 17:23:00"
+            },
+            {
+                "problemname":
+                    " 小明前几次数学测验的平均成绩是84分，这次要考100分，才能把平均成绩提高到86分，问：这是第几次测验？",
+                "_c_value": "数学",
+                "classname": "二班",
+                "name": "学生1",
+                "shoucang": 0,
+                "huida": 0,
+                "isspecify": "0",
+                "problemid": "13d17ea2-433b-4a80-971d-0af450fc2fdd",
+                "problemtime": "2017-09-01 15:31:00"
+            },
+            {
+                "problemname": "54+6=?",
+                "_c_value": "数学",
+                "classname": "二班",
+                "name": "学生1",
+                "shoucang": 1,
+                "huida": 1,
+                "isspecify": "0",
+                "problemid": "7f6a95bf-ef30-4672-8828-607bd8e729de",
+                "problemtime": "2017-01-19 10:40:00"
+            },
+            {
+                "problemname": "同学们去公园划船，每6人一组，需要4条船。如果每8人一组，需要几条船",
+                "_c_value": "数学",
+                "classname": "二班",
+                "name": "学生1",
+                "shoucang": 0,
+                "huida": 1,
+                "isspecify": "0",
+                "problemid": "d0d745ea-1f96-41cf-b5c5-967eebedbb79",
+                "problemtime": "2017-01-18 17:25:00"
+            },
+            {
+                "problemname": "4的5倍是多少？",
+                "_c_value": "数学",
+                "classname": "二班",
+                "name": "学生1",
+                "shoucang": 0,
+                "huida": 1,
+                "isspecify": "0",
+                "problemid": "a3b40351-9537-4d2d-b889-4864172dbc81",
+                "problemtime": "2017-01-18 17:23:00"
+            },
+            {
+                "problemname": "小青有28张画片，照片比画片多16张。小青有多少张照片?",
+                "_c_value": "数学",
+                "classname": "一班",
+                "name": "学生2",
+                "shoucang": 1,
+                "huida": 0,
+                "isspecify": "0",
+                "problemid": "db387f5a-40a7-4715-9b2b-054d92c4a4e1",
+                "problemtime": "2016-10-28 15:55:00"
+            },
+            {
+                "problemname": "只有1和本身两个因数的数是（ ）A.合数.B.奇数.C.质数.D.公因数",
+                "_c_value": "数学",
+                "classname": "二班",
+                "name": "学生1",
+                "shoucang": 1,
+                "huida": 1,
+                "isspecify": "0",
+                "problemid": "2714ca6c-9370-4813-a86c-6b5e7f761899",
+                "problemtime": "2016-10-28 15:36:00"
+            },
+            {
+                "problemname":
+                    "下列各数都有哪两个数的和是42？请写出来。35； 13 ； 15； 29； 27； 24； 7； 18",
+                "_c_value": "数学",
+                "classname": "二班",
+                "name": "学生1",
+                "shoucang": 0,
+                "huida": 1,
+                "isspecify": "0",
+                "problemid": "c1c04433-d068-4a80-8016-82ef76954f00",
+                "problemtime": "2016-10-28 15:35:00"
+            },
+            {
+                "problemname": "面粉2000 一共能做4份 求出它的一份 二份 三份的量。怎么算用什么除什么以及公式谢谢极速",
+                "_c_value": "数学",
+                "classname": "二班",
+                "name": "学生1",
+                "shoucang": 1,
+                "huida": 1,
+                "isspecify": "0",
+                "problemid": "bc1c482b-d49a-4ca1-88bf-88c699c664cf",
+                "problemtime": "2016-10-28 15:32:00"
+            },
+            {
+                "problemname":
+                    " 甲乙两数的和是1·98，如果把甲数缩小的原来的十分之一，那么甲乙两数的比是1比1原来的甲数是多少，乙数是多少",
+                "_c_value": "数学",
+                "classname": "二班",
+                "name": "学生1",
+                "shoucang": 1,
+                "huida": 0,
+                "isspecify": "0",
+                "problemid": "aa2826e6-16d3-4336-bb93-1eb82615c005",
+                "problemtime": "2016-10-28 15:30:00"
+            }
+        ]
+    }
+}

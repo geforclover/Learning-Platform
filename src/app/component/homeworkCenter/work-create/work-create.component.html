@@ -1,0 +1,199 @@
+<div class="tableView tableCreate">
+	<div class="tableView-title">
+		<span class="tableView-title__name">创建作业　CREATE HOMEWORK</span>
+		<span class="tableView-title__icon">
+			<img src="/assets/images/icons/icon-close.png" alt="" tableViewClose>
+		</span>
+	</div>
+	<div class="tableView-form">
+		<!-- <form [formGroup]="createWork"> -->
+			<input type="hidden" id="TzFiles" *ngIf="selectedWorkValue === '0e7e71f6-3b37-4486-82b7-20df6280080a'" />
+			<input type="hidden" id="CtFiles" *ngIf="selectedWorkValue === '909b0d1c-ce08-45a1-a2af-c554bb00a904'" />
+			<input type="hidden" id="CsFiles" *ngIf="selectedWorkValue === 'df645a77-6495-4e3b-9b9d-98171fc0f1a7'" />
+			<div class="createForm">
+				<div class="createForm-item">
+					<span class="createForm-item__label">科　　目</span>
+					<div class="createForm-item__checkbox">
+						<span class="createForm-item__checkbox--item" *ngFor="let subject of subjects" (click)="setActiveClass(subject.name, null)" [ngClass]="{'--active': subjectName === subject.name}">{{subject.name}}</span>
+					</div>
+				</div>
+				<div class="createForm-item">
+					<span class="createForm-item__label">班　　级</span>
+					<div class="createForm-item__checkbox">
+						<span class="createForm-item__checkbox--item" *ngFor="let grade of grades" (click)="setActiveClass(null, grade.name)" [ngClass]="{'--active': gradeName === grade.name}">{{grade.name}}</span>
+					</div>
+				</div>
+				<div class="createForm-item" *ngIf="classShow === true">
+					<span class="createForm-item__label">　　　　</span>
+					<div class="createForm-item__checkbox">
+						<span>
+							<input type="checkbox" name="" id="">
+							<label class="createForm-item__checkbox--item" for=""></label>
+						</span>
+					</div>
+				</div>
+				<div class="createForm-item" *ngIf="mandateNumArr.indexOf(1) > -1">
+					<span class="createForm-item__label">要　　求</span>
+					<div class="createForm-item__input">
+						<input required="required" name="mandate1" type="text" [(ngModel)]="mandate1"><label alt="作业要求1" placeholder="要求1"></label>
+					</div>
+					<span class="createForm-item__icon" (click)="addMandate(mandateNum + 1)" *ngIf="mandateNumArr.length < 5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-tianjia"></use></svg></span>
+					<span class="createForm-item__icon" (click)="removeMandate(1)" *ngIf="mandateNum > 1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-jianshao"></use></svg></span>
+				</div>
+				<div class="createForm-item" *ngIf="mandateNumArr.indexOf(2) > -1">
+					<span class="createForm-item__label">　　　　</span>
+					<div class="createForm-item__input">
+						<input required='required' type='text' [(ngModel)]="mandate2"><label alt='作业要求2' placeholder="要求2"></label>
+					</div>
+					<span class="createForm-item__icon" (click)="addMandate()" *ngIf="mandateNumArr.indexOf(2) === 0"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-tianjia"></use></svg></span>
+					<span class="createForm-item__icon" (click)="removeMandate(2)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-jianshao"></use></svg></span>
+				</div>
+				<div class="createForm-item" *ngIf="mandateNumArr.indexOf(3) > -1">
+					<span class="createForm-item__label">　　　　</span>
+					<div class="createForm-item__input">
+						<input required='required' type='text' [(ngModel)]="mandate3"><label alt='作业要求3' placeholder="要求3"></label>
+					</div>
+					<span class="createForm-item__icon" (click)="addMandate()" *ngIf="mandateNumArr.indexOf(3) === 0"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-tianjia"></use></svg></span>
+					<span class="createForm-item__icon" (click)="removeMandate(3)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-jianshao"></use></svg></span>
+				</div>
+				<div class="createForm-item" *ngIf="mandateNumArr.indexOf(4) > -1">
+					<span class="createForm-item__label">　　　　</span>
+					<div class="createForm-item__input">
+						<input required='required' type='text' [(ngModel)]="mandate4"><label alt='作业要求4' placeholder="要求4"></label>
+					</div>
+					<span class="createForm-item__icon" (click)="addMandate()" *ngIf="mandateNumArr.indexOf(4) === 0"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-tianjia"></use></svg></span>
+					<span class="createForm-item__icon" (click)="removeMandate(4)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-jianshao"></use></svg></span>
+				</div>
+				<div class="createForm-item" *ngIf="mandateNumArr.indexOf(5) > -1">
+					<span class="createForm-item__label">　　　　</span>
+					<div class="createForm-item__input">
+						<input required='required' type='text' [(ngModel)]="mandate5"><label alt='作业要求5' placeholder="要求5"></label>
+					</div>
+					<span class="createForm-item__icon" (click)="addMandate()" *ngIf="mandateNumArr.indexOf(5) === 0"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-tianjia"></use></svg></span>
+					<span class="createForm-item__icon" (click)="removeMandate(5)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-jianshao"></use></svg></span>
+				</div>
+				<div class="createForm-item">
+					<span class="createForm-item__label">作业类型</span>
+					<div class="createForm-item__checkbox">
+						<span class="createForm-item__checkbox--item" (click)="selectWorkType(item.key, item.value)"></span>
+					</div>
+				</div>
+				<div class="createForm-item">
+					<span class="createForm-item__label">作业说明</span>
+					<div class="createForm-item__input">
+						<app-tiny-editor [elementId]="'create-homework'" (onEditorContentChange)="keyupHandler($event)"></app-tiny-editor>
+					</div>
+				</div>
+				<div class="createForm-item" [ngSwitch]="">
+					<span class="createForm-item__label">作业资源</span>
+					<div class="createForm-item__upload" *ngSwitchCase=""></div>
+					<div class="createForm-item__upload" *ngSwitchCase="">
+						<div id="fileList" class="uploader-list"></div>
+						<div id="filePicker" class="webuploader-container">
+							<div class="webuploader-pick">选择文件</div>
+						</div>
+					</div>
+					<div class="createForm-item__upload" *ngSwitchCase="">
+						<input type="button" class="testPaper" (click)="openRelation(true)" value="关联试卷"><span class="testPaper__choose"></span>
+					</div>
+				</div>
+				<div class="createForm-button">
+					<span (click)="createHomework()">添加作业</span>
+					<span>删除作业</span>
+					<span>发布作业</span>
+					<span>暂不发布</span>
+				</div>
+			</div>
+			<div class="createRelation" *ngIf="isRelation === true">
+				<div class="createRelation-item">
+					<span class="createRelation-item__label">科　　目</span>
+					<div class="createRelation-item__checkbox">
+						<span class="createRelation-item__checkbox--item active"></span>
+					</div>
+				</div>
+				<div class="createRelation-item">
+					<span class="createRelation-item__label">年　　级</span>
+					<div class="createRelation-item__checkbox">
+						<span class="createRelation-item__checkbox--item active"></span>
+					</div>
+				</div>
+				<div class="createRelation-item">
+					<span class="createRelation-item__label">试卷列表</span>
+					<ul class="createRelation-item__list">
+						<li>
+							<span class="createRelation-item__list--paper">
+								<span class="_title"></span><span class="_time"></span>
+							</span>
+							<span class="createRelation-item__list--btn">
+								<input type="button" value="选择试卷" (click)="setPaperName(item.mainTitle, item.examPaperId)">
+								<input type="button" value="预览" (click)="viewTestPaper(item.examPaperId, true, item.mainTitle)">
+							</span>
+						</li>
+						<li class="pageList">
+							<a (click)="selectPage($index + 1)"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="createRelation-button">
+					<span (click)="openRelation(false)">返回</span>
+					<span>新的组卷</span>
+					<span>暂不发布</span>
+				</div>
+			</div>
+		<!-- </form> -->
+		<div class="createView">
+			<div class="createView-item">
+				<span class="createView-item__label">作业名称</span><span class="createView-item__view">{{startMonth}}月 {{startDate}}日作业</span>
+			</div>
+			<div class="createView-item">
+				<span class="createView-item__label">科　　目</span><span class="createView-item__view"></span>
+			</div>
+			<div class="createView-item">
+				<span class="createView-item__label">班　　级</span>
+				<div class="createView-item__view">
+					<span class="createView-item__view--item" *ngIf="">()</span>
+				</div>
+			</div>
+			<div class="createView-item" *ngIf="mandateNumArr.indexOf(1) > -1">
+				<span class="createView-item__label">要　　求</span><span class="createView-item__view">{{mandate1}}</span>
+			</div>
+			<div class="createForm-item" *ngIf="mandateNumArr.indexOf(2) > -1">
+				<span class="createForm-item__label">　　　　</span><span class="createView-item__view">{{mandate2}}</span>
+			</div>
+			<div class="createForm-item" *ngIf="mandateNumArr.indexOf(3) > -1">
+				<span class="createForm-item__label">　　　　</span><span class="createView-item__view">{{mandate3}}</span>
+			</div>
+			<div class="createForm-item" *ngIf="mandateNumArr.indexOf(4) > -1">
+				<span class="createForm-item__label">　　　　</span><span class="createView-item__view">{{mandate4}}</span>
+			</div>
+			<div class="createForm-item" *ngIf="mandateNumArr.indexOf(5) > -1">
+				<span class="createForm-item__label">　　　　</span><span class="createView-item__view">{{mandate5}}</span>
+			</div>
+			<div class="createView-item">
+				<span class="createView-item__label">起止日期</span>
+				<span class="createView-item__view">{{startMonth}}月 {{startDate}}日 — {{overMonth}}月 {{overDate}}日</span>
+			</div>
+			<div class="createView-table" ng-controller="createHomeworkListCtrl">
+				<div class="createView-table__card" (mouseenter)="_hoverCard = !_hoverCard" (mouseleave)="_hoverCard = !_hoverCard" [ngClass]="{'_onHover': _hoverCard === true, '_onLeave': _hoverCard === false}">
+					<ul class="_static">
+						<li>作业类型：</li>
+						<li>完成类型：</li>
+					</ul>
+					<div class="_hover">
+						<span>作业内容：</span>
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="paperView" *ngIf="isPaperView === true">
+			<div class="paperView-title"></div>
+			<div class="paperView-content">
+				<div class="paperView-content__item">
+				  <span class="_index"></span>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

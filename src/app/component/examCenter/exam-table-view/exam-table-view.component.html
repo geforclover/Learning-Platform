@@ -1,0 +1,76 @@
+<div class="tableView --zoomIn">
+  <div class="tableView-title">
+    <span class="tableView-title__name">{{tableViewService.modelTitle.name}}</span>
+    <span class="tableView-title__icon">
+    <img src="/assets/images/icons/icon-zoomIn.png" alt="" (click)="setZoomClass(false)">
+    <img src="/assets/images/icons/icon-zoomOut.png" alt="" (click)="setZoomClass(true)">
+    <img src="/assets/images/icons/icon-close.png" alt="" tableViewClose>
+  </span>
+  </div>
+  <div class="tableView-content">
+    <div class="tableView-content-heading" #tableHeading>
+      <div style="display: inline;" *ngIf="examList === 'examination'">
+        <span>考试范围</span>
+        <div class="--filters" (click)="popLeftPanel()">
+          <span class="--filters__name">{{gradeName}}</span>
+          <span class="--filters__icon" *ngIf="subjectName !== undefined" (click)="resetSingleFilter(subjectName)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shanchu"></use></svg></span>
+        </div>
+        <span style="display: inline-block"><input type="text" placeholder="考试名称"></span>
+        <span style="display: inline-block"><input type="text" placeholder="创建人"></span>
+        <div class="--filters-button" (click)="resetFilters()">重置</div>
+      </div>
+      <div style="display: inline;" *ngIf="examList === 'rooms' || examList === 'export'">
+        <span>考试名</span>
+        <div class="--filters" (click)="popLeftPanel()">
+          <span class="--filters__name">{{gradeName}}</span>
+          <span class="--filters__icon" *ngIf="subjectName !== undefined" (click)="resetSingleFilter(subjectName)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shanchu"></use></svg></span>
+        </div>
+        <span>年级</span>
+        <div class="--filters" (click)="popLeftPanel()">
+          <span class="--filters__name">{{gradeName}}</span>
+          <span class="--filters__icon" *ngIf="subjectName !== undefined" (click)="resetSingleFilter(subjectName)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shanchu"></use></svg></span>
+        </div>
+        <span>学年</span>
+        <div class="--filters" (click)="popLeftPanel()">
+          <span class="--filters__name">{{gradeName}}</span>
+          <span class="--filters__icon" *ngIf="subjectName !== undefined" (click)="resetSingleFilter(subjectName)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shanchu"></use></svg></span>
+        </div>
+        <span>学期</span>
+        <div class="--filters" (click)="popLeftPanel()">
+          <span class="--filters__name">{{gradeName}}</span>
+          <span class="--filters__icon" *ngIf="subjectName !== undefined" (click)="resetSingleFilter(subjectName)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shanchu"></use></svg></span>
+        </div>
+        <span>考场</span>
+        <div class="--filters" (click)="popLeftPanel()">
+          <span class="--filters__name">{{gradeName}}</span>
+          <span class="--filters__icon" *ngIf="subjectName !== undefined" (click)="resetSingleFilter(subjectName)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shanchu"></use></svg></span>
+        </div>
+        <div class="--filters" [routerLink]="['/examCenter/exam-rooms/exam-rooms-arrange']">
+          <span class="--filters__name">考场编排</span>
+        </div>
+        <div class="--filters" [routerLink]="['/examCenter/exam-rooms/exam-rooms-export']">
+          <span class="--filters__name">导出考场编排</span>
+        </div>
+      </div>
+    </div>
+    <div class="tableView-content-main" #tableViewMain>
+      <div class="mainView-single" [ngSwitch]="examList">
+        <app-exam-examination *ngSwitchCase="'examination'"></app-exam-examination>
+        <app-exam-rooms *ngSwitchCase="'rooms'"></app-exam-rooms>
+      </div>
+    </div>
+    <div class="tableView-content-leftPanel" #leftPanel>
+      <div class="tableView-content-leftPanel__title">年级列表</div>
+      <ul class="tableView-content-leftPanel__list">
+        <li *ngFor="let grade of grades" (click)="getCurrentGradeName(grade.key)" [ngClass]="{'--active': gradeName === grade.key}">{{grade.key}}</li>
+      </ul>
+    </div>
+    <div class="tableView-content-rightPanel" #rightPanel>
+      <div class="tableView-content-rightPanel__title">科目列表</div>
+      <ul class="tableView-content-rightPanel__list">
+        <li *ngFor="let subject of subjects" (click)="getCurrentSubjectName(subject.name)" [ngClass]="{'--active': subjectName === subject.name}">{{subject.name}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,106 @@
+<div class="tableView --zoomIn">
+    <div class="tableView-title">
+        <span class="tableView-title__name">问题解答</span>
+        <span class="tableView-title__icon">
+			<img src="/assets/images/icons/icon-zoomIn.png" alt="" (click)="setZoomClass(false)">
+			<img src="/assets/images/icons/icon-zoomOut.png" alt="" (click)="setZoomClass(true)">
+			<img src="/assets/images/icons/icon-close.png" alt="" tableViewClose>
+		</span>
+    </div>
+    <div class="tableView-content">
+        <div class="tableView-content-main" #tableViewMain appPaddingBox>
+            <div class="mainView-single">
+                <div class="card padding-0-4vw-0-2vw">
+                    <div class="label label-triangleUR --upper-right">
+                        <span class="label-icon"><svg class="icon" aria-hidden="true"><use attr.xlink:href={{subIcon[index]}}></use></svg></span>
+                    </div>
+                    <div class="list-card-label label label-bookmark --upper-left" [ngClass]="{'label-bookmark__current': collect === true}" (click)="collect = !collect">
+                        <span class="label-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shoucang"></use></svg></span>
+                        <span class="label-text">收藏</span>
+                    </div>
+                    <div class="list-card-label label label-steeple --lower-left">
+                        <span class="label-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-huida1"></use></svg></span>
+                        <span class="label-text">{{currentReplyAnswer.huida}}</span>
+                    </div>
+                    <div class="card-header">
+                        <span class="_icon _icon-ask"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-tiwen"></use></svg></span>
+                        <span>{{currentReplyAnswer.problemname}}</span>
+                    </div>
+                    <div class="card-content">{{currentReplyAnswer.problemname}}</div>
+                    <div class="card-footer">
+                        <span class="card-footer-item">{{currentReplyAnswer.name}}</span>
+                        <span class="card-footer-item">{{currentReplyAnswer.problemtime}}</span>
+                    </div>
+                </div>
+                <div class="card padding-0-1vw-0-2vw">
+                    <div class="list-card-label label label-bookmark --upper-left">
+                        <span>我要纠错</span>
+                    </div>
+                    <div class="list-card-label label label-steeple --lower-left">
+                        <a href="#" tableViewClose>回复</a>
+                    </div>
+                    <div class="card-header">
+                        <span class="_icon _icon-reply"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-gerenzhuyesvg09-copy"></use></svg></span>
+                        <span>提问者采纳</span>
+                    </div>
+                    <div class="card-content">
+                        设经过x小时后甲追上乙，根据题意可得方程：<br>
+                        7x-5x=（7+5）×0.5，<br>
+                           2x=6，<br>
+                            x=3，<br>
+                        答：甲经过3小时追上乙．<br>
+                        故答案为：3．<br>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-footer-item">
+                            <span class="hold-btn hold-approve"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zhichi0"></use></svg>0</span>
+                            <span class="hold-btn hold-against"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-fandui"></use></svg>0</span>
+                        </span>
+                        <span class="card-footer-item">{{currentReplyAnswer.name}}</span>
+                        <span class="card-footer-item">最后发表时间{{currentReplyAnswer.problemtime}}</span>
+                    </div>
+                </div>
+                <div class="card padding-0-1vw-0-2vw">
+                    <div class="list-card-label label label-bookmark --upper-left">
+                        <span>提交回答</span>
+                    </div>
+                    <div class="list-card-label label label-steeple --lower-left">
+                        <a href="#" tableViewClose>取消</a>
+                    </div>
+                    <div class="card-header">
+                        <span class="_icon _icon-reply"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-icon"></use></svg></span>
+                        <span>所有回答</span>
+                    </div>
+                    <div class="card-content">
+                        <app-tiny-editor [elementId]="'answer-reply'" (onEditorContentChange)="keyupHandler($event)"></app-tiny-editor>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-footer-item">{{currentReplyAnswer.name}}</span>
+                        <span class="card-footer-item">{{currentReplyAnswer.problemtime}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tableView-content-leftPanel" #leftPanel>
+            <div class="tableView-content-leftPanel__title">学科列表</div>
+            <ul class="tableView-content-leftPanel__list">
+                <li *ngFor="let subject of subjects" (click)="getCurrentSubjectName(subject.name)" [ngClass]="{'--active': subjectName === subject.name}">{{subject.name}}</li>
+            </ul>
+        </div>
+        <div class="tableView-content-rightPanel" #rightPanel>
+            <div class="tableView-content-rightPanel__title">教材列表</div>
+            <ul class="tableView-content-rightPanel__list">
+                <li *ngFor="let version of versions" (click)="getCurrentVersionName(version.key)" [ngClass]="{'--active': versionName === version.key}">{{version.key}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="panel answer-prompt">
+    <h3>温馨提示</h3>
+</div>
+<div class="panel answer-special">
+    <h3>{{currentReplyAnswer.gradename}}{{currentReplyAnswer._c_value}}问题辑</h3>
+</div>
+<div class="panel answer-popular">
+    <h3>热门精选问题</h3>
+</div>

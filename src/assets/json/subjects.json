@@ -1,0 +1,61 @@
+[
+{
+  "subjectId": "subj0001",
+  "name": "语文"
+},
+{
+  "subjectId": "subj0002",
+  "name": "数学"
+},
+{
+  "subjectId": "subj0003",
+  "name": "英语"
+},
+{
+  "subjectId": "subj0004",
+  "name": "品德与社会"
+},
+{
+  "subjectId": "subj0005",
+  "name": "品德与生活"
+},
+{
+  "subjectId": "subj0006",
+  "name": "科学"
+},
+{
+  "subjectId": "subj0007",
+  "name": "音乐"
+},
+{
+  "subjectId": "subj0008",
+  "name": "美术"
+},
+{
+  "subjectId": "subj0009",
+  "name": "体育与健康"
+},
+{
+  "subjectId": "subj0010",
+  "name": "信息技术"
+},
+{
+  "subjectId": "subj0011",
+  "name": "劳动技术"
+},
+{
+  "subjectId": "subj0012",
+  "name": "天津与世界"
+},
+{
+  "subjectId": "subj0013",
+  "name": "校本"
+},
+{
+  "subjectId": "subj0014",
+  "name": "道德与法治"
+},
+{
+  "subjectId": "subj0015",
+  "name": "习字与书法"
+}]

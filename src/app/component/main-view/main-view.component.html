@@ -1,0 +1,7 @@
+<div class="mainView-avater"><img src="/assets/images/avater.jpg" alt=""></div>
+<div class="mainView-tabs" id="mainView-tabs">
+  <div class="mainView-tabs-items" *ngFor="let model of mainModel" [routerLink]="[model.url]" (click)="setModelDetail(model.name, model.url)">
+    <span class="item-icon">{{model.icon}}</span>
+    <span class="item-label">{{model.name}}</span>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="item-column">
+	<div class="card column-4" *ngFor="let online of onlines">
+		<div class="card-header">
+			<div class="card-header-image">
+				<img src="/assets/images/teach.jpg" alt="">
+			</div>
+		</div>
+		<div class="card-content t-center">
+			<span class="card-content-text">{{online.learnprocessname}}</span>
+		</div>
+		<div class="card-footer t-right">
+			<span>{{online.createtime.substring(0,10)}}</span>
+			<span>{{online.studentnum}}人学习</span>
+		</div>
+	</div>
+	<div class="card column-4">
+		<div class="card-header">
+			<div class="card-header-image" [routerLink]="'create-online'">
+				<img src="/assets/images/create.png" alt="">
+			</div>
+		</div>
+	</div>
+</div>

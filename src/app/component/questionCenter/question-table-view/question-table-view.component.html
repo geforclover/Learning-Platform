@@ -1,0 +1,68 @@
+<div class="tableView --zoomIn">
+    <div class="tableView-title">
+        <span class="tableView-title__name">{{tableViewService.modelTitle.name}}</span>
+        <span class="tableView-title__icon">
+			<img src="/assets/images/icons/icon-zoomIn.png" alt="" (click)="setZoomClass(false)">
+			<img src="/assets/images/icons/icon-zoomOut.png" alt="" (click)="setZoomClass(true)">
+			<img src="/assets/images/icons/icon-close.png" alt="" tableViewClose>
+		</span>
+    </div>
+    <div class="tableView-content">
+        <div class="tableView-content-heading" #tableHeading>
+            <div *ngIf="current === 'complete' || current === 'myCollection'" style="display:inline">
+                <span>筛选年级：</span>
+                <div class="--filters" (click)="popLeftPanel()">
+                    <span class="--filters__name">{{gradeName}}</span>
+                    <span class="--filters__icon" *ngIf="subjectName !== undefined" (click)="resetSingleFilter(subjectName)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shanchu"></use></svg></span>
+                </div>
+                <span>筛选科目：</span>
+                <div class="--filters" (click)="popRightPanel()">
+                    <span class="--filters__name">{{subjectName}}</span>
+                    <span class="--filters__icon" *ngIf="versionName !== undefined" (click)="resetSingleFilter(versionName)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shanchu"></use></svg></span>
+                </div>
+                <span><input type="text" placeholder="输入关键字查找"></span>
+                <div class="--filters-button" (click)="resetFilters()">重置</div>
+            </div>
+            <div *ngIf="current === 'myClass'" style="display:inline">
+                <label for="all" class="--filters"><input type="radio" name="status" id="all"><span class="--filters__name">全部</span></label>
+                <label for="done" class="--filters"><input type="radio" name="status" id="done"><span class="--filters__name">已解决</span></label>
+                <label for="none" class="--filters"><input type="radio" name="status" id="none"><span class="--filters__name">未解决</span></label>
+            </div>
+            <div *ngIf="current === 'myAsk'" style="display:inline">
+                <label for="all" class="--filters"><input type="radio" name="status" id="all"><span class="--filters__name">全部</span></label>
+                <label for="done" class="--filters"><input type="radio" name="status" id="done"><span class="--filters__name">已解决</span></label>
+                <label for="none" class="--filters"><input type="radio" name="status" id="none"><span class="--filters__name">未解决</span></label>
+                <label for="close" class="--filters"><input type="radio" name="status" id="close"><span class="--filters__name">已关闭</span></label>
+            </div>
+            <div *ngIf="current === 'myReply'" style="display:inline">
+                <label for="all" class="--filters"><input type="radio" name="status" id="all"><span class="--filters__name">全部</span></label>
+                <label for="accept" class="--filters"><input type="radio" name="status" id="accept"><span class="--filters__name">已被采纳</span></label>
+                <label for="refuse" class="--filters"><input type="radio" name="status" id="refuse"><span class="--filters__name">未被采纳</span></label>
+            </div>
+            <div class="--filters" [routerLink]="[currentAnswerUrl]" *ngIf="isAnswerList === true" >
+                <span class="--filters__name">{{currentAnswerName}}</span>
+            </div>
+        </div>
+        <div class="tableView-content-main" #tableViewMain>
+            <div class="mainView-single" [ngSwitch]="answerList" >
+                <app-answer-complete *ngSwitchCase="'complete'"></app-answer-complete>
+                <app-answer-my-ask *ngSwitchCase="'myAsk'"></app-answer-my-ask>
+                <app-answer-my-reply *ngSwitchCase="'myReply'"></app-answer-my-reply>
+                <app-answer-my-collection *ngSwitchCase="'myCollection'"></app-answer-my-collection>
+            </div>
+        </div>
+        <div class="tableView-content-leftPanel" #leftPanel>
+            <div class="tableView-content-leftPanel__title">年级列表</div>
+            <ul class="tableView-content-leftPanel__list">
+                <li *ngFor="let grade of grades" (click)="getCurrentGradeName(grade.name)" [ngClass]="{'--active': gradeName === grade.name}">{{grade.name}}</li>
+            </ul>
+        </div>
+        <div class="tableView-content-rightPanel" #rightPanel>
+            <div class="tableView-content-rightPanel__title">科目列表</div>
+            <ul class="tableView-content-rightPanel__list">
+                <li *ngFor="let subject of subjects" (click)="getCurrentSubjectName(subject.name)" [ngClass]="{'--active': subjectName === subject.name}">{{subject.name}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

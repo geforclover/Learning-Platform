@@ -1,0 +1,13 @@
+<div class="card" *ngFor="let room of roomsList" >
+  <div class="card-header"><span>{{room.exam_name}}</span><span class="_numIndex">{{room.examname}}</span></div>
+  <div class="card-content">
+    <span><svg aria-hidden="true" class="icon card-content-icon"><use xlink:href="#icon-dizhi-copy"></use></svg>{{room.address}}</span>
+    <span>{{room.gradename}}</span>
+  </div>
+  <div class="card-footer">
+    <div class="buttonBox">
+      <span class="button">展开</span>
+      <span class="button">删除</span>
+    </div>
+  </div>
+</div>

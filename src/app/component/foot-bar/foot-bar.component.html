@@ -1,0 +1,27 @@
+<ul class="footer-navBar-wrap" #navBarWrap>
+  <li class="navBar-item _courses" (mouseenter)="menuItemEnter(0)" (mouseleave)="menuItemLeave()" (click)="menuItemActive(0)" [ngClass]="{'--hover': current === 0, '--active': active === 0}" [routerLink]="['/preparCenter']">
+    <div class="navBar-center">
+      <div class="_chinese"><span></span>备课中心</div>
+      <div class="_english"><span>MY</span><span>COURSES</span></div>
+    </div>
+  </li>
+  <li class="navBar-item _homework" (mouseenter)="menuItemEnter(1)" (mouseleave)="menuItemLeave()" (click)="menuItemActive(1)" [ngClass]="{'--hover': current === 1, '--active': active === 1}" [routerLink]="['/homeworkCenter']">
+    <div class="navBar-center">
+      <div class="_chinese"><span></span>作业中心</div>
+      <div class="_english"><span>MY</span><span>HOMEWORK</span></div>
+    </div>
+  </li>
+  <li class="navBar-item _teach" (mouseenter)="menuItemEnter(2)" (mouseleave)="menuItemLeave()" (click)="menuItemActive(2)" [ngClass]="{'--hover': current === 2, '--active': active === 2}" [routerLink]="['/teachCenter']">
+    <div class="navBar-center">
+      <div class="_chinese"><span></span>教学中心</div>
+      <div class="_english"><span>TEACH</span><span>CENTER</span></div>
+    </div>
+  </li>
+  <li class="navBar-item _exciting" (mouseenter)="menuItemEnter(3)" (mouseleave)="menuItemLeave()" (click)="menuItemActive(3)" [ngClass]="{'--hover': current === 3, '--active': active === 3}" [routerLink]="['/moreExciting']">
+    <div class="navBar-center">
+      <div class="_chinese"><span></span>更多精彩</div>
+      <div class="_english"><span>MORE</span><span>EXCITING</span></div>
+    </div>
+  </li>
+  <li class="_hoverShadow" #_hoverShadow></li>
+</ul>

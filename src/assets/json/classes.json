@@ -1,0 +1,21 @@
+[
+{
+  "name": "小学五年级三班",
+  "gradeid": "3b2a4a9a-e70c-4f53-8da4-3349becf184a",
+  "classid": "67620e2f-681f-4072-9da0-69a521a34d19"
+},
+{
+  "name": "小学一年级一班",
+  "gradeid": "grade_id1",
+  "classid": "747FBAD4-810E-4A58-AD58-140774FF4CFC"
+},
+{
+  "name": "小学二年级一班",
+  "gradeid": "dea0c49f-d44e-4443-95ef-f20ec95cb8b3",
+  "classid": "f51963ea-ec63-4406-a386-ca307c18860d"
+},
+{
+  "name": "小学一年级二班",
+  "gradeid": "grade_id1",
+  "classid": "FF751190-8E0F-4282-8E6C-D094E77CDB85"
+}]

@@ -1,0 +1,10 @@
+{
+    "list": [
+        { "value": "2d5d125b-384c-47a3-aa78-1a3386785660", "key": "小学一年级" },
+        { "value": "grade_id1", "key": "小学二年级" },
+        { "value": "dea0c49f-d44e-4443-95ef-f20ec95cb8b3", "key": "小学三年级" },
+        { "value": "d5d554f2-7e38-4b11-87d9-460870dac7de", "key": "小学四年级" },
+        { "value": "c72e6949-b9ce-4ade-a4e3-44adf4d362cf", "key": "小学五年级" },
+        { "value": "3b2a4a9a-e70c-4f53-8da4-3349becf184a", "key": "小学六年级" }
+    ]
+}

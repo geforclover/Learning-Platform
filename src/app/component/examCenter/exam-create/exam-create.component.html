@@ -1,0 +1,115 @@
+<div class="tableView tableCreate">
+  <div class="tableView-title">
+    <span class="tableView-title__name">创建考试　CREATE EXAM</span>
+    <span class="tableView-title__icon">
+        <img src="/assets/images/icons/icon-close.png" alt="" tableViewClose>
+      </span>
+  </div>
+  <div class="tableView-form" ng-controller="createHomeworkCtrl">
+    <input type="hidden" id="TzFiles" *ngIf="selectedWorkValue === '0e7e71f6-3b37-4486-82b7-20df6280080a'" />
+    <input type="hidden" id="CtFiles" *ngIf="selectedWorkValue === '909b0d1c-ce08-45a1-a2af-c554bb00a904'" />
+    <input type="hidden" id="CsFiles" *ngIf="selectedWorkValue === 'df645a77-6495-4e3b-9b9d-98171fc0f1a7'" />
+    <div class="createForm">
+      <div class="createForm-item">
+        <span class="createForm-item__label">学　　年</span>
+        <div class="createForm-item__checkbox">
+          <span class="createForm-item__checkbox--item" *ngFor="let year of termYears" (click)="setActiveClass(year.key)"
+            [ngClass]="{'--active': yearYear === year.key}">{{year.key}}</span>
+        </div>
+      </div>
+      <div class="createForm-item">
+        <span class="createForm-item__label">学　　期</span>
+        <div class="createForm-item__checkbox">
+          <span class="createForm-item__checkbox--item" *ngFor="let term of terms" (click)="setActiveClass(term.key)" [ngClass]="{'--active': termName === term.key}">{{term.key}}</span>
+        </div>
+      </div>
+      <div class="createForm-item">
+        <span class="createForm-item__label">环　　境</span>
+        <div class="createForm-item__checkbox">
+          <span class="createForm-item__checkbox--item" (click)="setConditionClass('online')" [ngClass]="{'--active': condition === 'online'}">在线</span>
+          <span class="createForm-item__checkbox--item" (click)="setConditionClass('offline')" [ngClass]="{'--active': condition === 'offline'}">线下</span>
+        </div>
+      </div>
+      <div class="createForm-item">
+        <span class="createForm-item__label">考试名称</span>
+        <div class="createForm-item__input">
+          <input required="required" name="" type="text">
+        </div>
+      </div>
+      <div class="createForm-item">
+        <span class="createForm-item__label">考试类型</span>
+        <div class="createForm-item__checkbox">
+          <span class="createForm-item__checkbox--item" *ngFor="let type of examTypes" (click)="setActiveClass()" [ngClass]="{'--active': examType === type.key}">{{type.key}}</span>
+        </div>
+      </div>
+      <div class="createForm-item">
+        <span class="createForm-item__label">考试范围</span>
+        <div class="createForm-item__checkbox">
+          <span class="createForm-item__checkbox--item" *ngFor="let grade of grades" (click)="setActiveClass(null, grade.name)" [ngClass]="{'--active': gradeName === grade.name}">{{grade.name}}</span>
+        </div>
+      </div>
+      <div class="createForm-item">
+        <span class="createForm-item__label">考试日期</span>
+        <div class="createForm-item__checkbox">
+          <span class="createForm-item__checkbox--item" *ngFor="let grade of grades" (click)="setActiveClass(null, grade.name)" [ngClass]="{'--active': gradeName === grade.name}">{{grade.name}}</span>
+        </div>
+      </div>
+      <div class="createForm-item">
+        <span class="createForm-item__label">年　　级</span>
+        <div class="createForm-item__checkbox">
+          <span class="createForm-item__checkbox--item" *ngFor="let subject of subjects" (click)="setActiveClass(subject.name, null)"
+            [ngClass]="{'--active': subjectName === subject.name}">{{subject.name}}</span>
+        </div>
+      </div>
+      <div class="createForm-item">
+        <span class="createForm-item__label">科　　目</span>
+        <div class="createForm-item__checkbox">
+          <span class="createForm-item__checkbox--item" *ngFor="let grade of grades" (click)="setActiveClass(null, grade.name)" [ngClass]="{'--active': gradeName === grade.name}">{{grade.name}}</span>
+        </div>
+      </div>
+      <div class="createForm-item">
+        <span class="createForm-item__label">出卷教师</span>
+        <div class="createForm-item__checkbox">
+          <span class="createForm-item__checkbox--item" *ngFor="let grade of grades" (click)="setActiveClass(null, grade.name)" [ngClass]="{'--active': gradeName === grade.name}">{{grade.name}}</span>
+        </div>
+      </div>
+      <div class="createForm-item">
+        <span class="createForm-item__label">总　　分</span>
+        <div class="createForm-item__input">
+          <input required="required" name="" type="text">
+        </div>
+      </div>
+      <div class="createForm-item">
+        <span class="createForm-item__label">时长/分钟</span>
+        <div class="createForm-item__input">
+          <input required="required" name="" type="text">
+        </div>
+      </div>
+      <div class="createForm-item">
+        <span class="createForm-item__label">开始时间</span>
+        <div class="createForm-item__checkbox">
+          <span class="createForm-item__checkbox--item" *ngFor="let grade of grades" (click)="setActiveClass(null, grade.name)" [ngClass]="{'--active': gradeName === grade.name}">{{grade.name}}</span>
+        </div>
+      </div>
+      <div class="createForm-item">
+        <span class="createForm-item__label">结束时间</span>
+        <div class="createForm-item__checkbox">
+          <span class="createForm-item__checkbox--item" *ngFor="let grade of grades" (click)="setActiveClass(null, grade.name)" [ngClass]="{'--active': gradeName === grade.name}">{{grade.name}}</span>
+        </div>
+      </div>
+      <div class="createForm-item">
+        <span class="createForm-item__label">及格分数</span>
+        <div class="createForm-item__input">
+          <input required="required" name="" type="text">
+        </div>
+      </div>
+      <div class="createForm-button">
+        <span (click)="createHomework()">重置</span>
+        <span>增加</span>
+        <span>保存考试科目</span>
+        <span>发布考试</span>
+      </div>
+    </div>
+    <div class="createView"></div>
+  </div>
+</div>
